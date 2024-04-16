@@ -43,9 +43,6 @@ import FormText from "./components/Form/FormText.vue";
 import FormTextarea from "./components/Form/FormTextarea.vue";
 import FormValidFeedback from "./components/Form/FormValidFeedback.vue";
 
-// Layout
-import AppHeader from "./components/Layout/AppHeader.vue";
-
 // Icons
 import IconAbTesting from "./components/Icon/IconAbTesting.vue";
 import IconAngleDown from "./components/Icon/IconAngleDown.vue";
@@ -95,6 +92,12 @@ import IconUser from "./components/Icon/IconUser.vue";
 import IconUsers from "./components/Icon/IconUsers.vue";
 import IconWarning from "./components/Icon/IconWarning.vue";
 
+// Layout
+import AppHeader from "./components/Layout/AppHeader.vue";
+
+// Logo
+import LogoOpenmost from "./components/Logo/LogoOpenmost.vue";
+
 // Modal
 import Modal from "./components/Modal/Modal.vue";
 
@@ -130,8 +133,6 @@ export {
     DropdownItem,
     DropdownItemForm,
     DropdownItemText,
-
-    AppHeader,
 
     Form,
     FormArray,
@@ -204,6 +205,10 @@ export {
     IconUser,
     IconUsers,
     IconWarning,
+
+    AppHeader,
+
+    LogoOpenmost,
 
     Modal,
 
