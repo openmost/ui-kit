@@ -81,6 +81,7 @@ import IconInfo from "./components/Icon/IconInfo.vue";
 import IconLogout from "./components/Icon/IconLogout.vue";
 import IconMarker from "./components/Icon/IconMarker.vue";
 import IconMatomo from "./components/Icon/IconMatomo.vue";
+import IconOnPremise from "./components/Icon/IconOnPremise.vue";
 import IconOpenmost from "./components/Icon/IconOpenmost.vue";
 import IconPlus from "./components/Icon/IconPlus.vue";
 import IconRefresh from "./components/Icon/IconRefresh.vue";
@@ -190,6 +191,7 @@ export {
     IconLogout,
     IconMarker,
     IconMatomo,
+    IconOnPremise,
     IconOpenmost,
     IconPlus,
     IconRefresh,
