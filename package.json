@@ -1,6 +1,6 @@
 {
   "name": "@openmost/ui-kit",
-  "version": "0.1.3",
+  "version": "0.1.9",
   "type": "module",
   "publishConfig": {
     "access": "public"
@@ -15,7 +15,10 @@
       "import": "./dist/openmost-ui-kit.js",
       "require": "./dist/openmost-ui-kit.umd.cjs"
     },
-    "./style.css": "./dist/style.css"
+    "./dist/index.css": {
+      "import": "./dist/index.css",
+      "require": "./dist/index.css"
+    }
   },
   "scripts": {
     "dev": "vite",

@@ -5,9 +5,18 @@ import Alert from "./components/Alert/Alert.vue";
 
 // Button
 import Button from "./components/Button/Button.vue";
+import ButtonGroup from "./components/Button/ButtonGroup.vue";
 
 // Datatable
 import DataTable from "./components/DataTable/DataTable.vue";
+
+// Dropdown
+import Dropdown from "./components/Dropdown/Dropdown.vue";
+import DropdownDivider from "./components/Dropdown/DropdownDivider.vue";
+import DropdownHeader from "./components/Dropdown/DropdownHeader.vue";
+import DropdownItem from "./components/Dropdown/DropdownItem.vue";
+import DropdownItemForm from "./components/Dropdown/DropdownItemForm.vue";
+import DropdownItemText from "./components/Dropdown/DropdownItemText.vue";
 
 // Form
 import Form from "./components/Form/Form.vue";
@@ -93,6 +102,9 @@ import Nav from "./components/Nav/Nav.vue";
 import NavItem from "./components/Nav/NavItem.vue";
 import NavLink from "./components/Nav/NavLink.vue";
 
+// Page
+import PageView from "./components/Page/PageView.vue";
+
 // Table
 import Table from "./components/Table/Table.vue";
 import Tbody from "./components/Table/Tbody.vue";
@@ -107,8 +119,16 @@ export {
     Alert,
 
     Button,
+    ButtonGroup,
 
     DataTable,
+
+    Dropdown,
+    DropdownDivider,
+    DropdownHeader,
+    DropdownItem,
+    DropdownItemForm,
+    DropdownItemText,
 
     AppHeader,
 
@@ -188,6 +208,8 @@ export {
     Nav,
     NavItem,
     NavLink,
+
+    PageView,
 
     Table,
     Tbody,
