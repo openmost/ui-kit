@@ -9,9 +9,9 @@ export default defineConfig({
     lib: {
       // src/indext.ts is where we have exported the component(s)
       entry: resolve(__dirname, "src/index.js"),
-      name: "BrianComponentLibrary",
+      name: "OpenmostUiKit",
       // the name of the output files when the build is run
-      fileName: "brian-component-lib",
+      fileName: "openmost-ui-kit",
     },
     rollupOptions: {
       // make sure to externalize deps that shouldn't be bundled
