@@ -55,7 +55,7 @@
 <script setup>
 import Modal from 'bootstrap/js/dist/modal'
 import {computed, onMounted, ref} from "vue";
-import Button from "../../App.vue";
+import Button from "../Button/Button.vue";
 
 const modal = ref();
 const emit = defineEmits(['ok']);
@@ -209,7 +209,7 @@ const modalTitleClass = computed(() => {
 })
 
 onMounted(() => {
-    modal.value = new Modal(document.getElementById(props.id))
+    modal.value = new Modal(modal.value)
 });
 
 function onOk() {
