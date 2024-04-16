@@ -1,3 +1,5 @@
+import './scss/app.scss';
+
 // Alert
 import Alert from "./components/Alert/Alert.vue";
 

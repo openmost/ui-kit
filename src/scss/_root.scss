@@ -1,0 +1,15 @@
+:root {
+  --text-primary: #161830;
+  --text-secondary: #1C1F41;
+
+  --component-bg: #e6e9f5;
+  --component-padding: 2rem;
+  --component-border-radius: 1rem;
+}
+
+[data-bs-theme=dark] {
+  --text-primary: #fff;
+  --text-secondary: #AEAFBB;
+
+  --component-bg: #1C1F41;
+}

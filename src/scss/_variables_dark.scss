@@ -1,0 +1,15 @@
+$body-bg-dark: #161830;
+$body-color-dark: #FFFFFF;
+
+$mark-color-dark: $body-bg-dark;
+$mark-bg-dark: $primary;
+
+$primary-text-emphasis-dark: #fff;
+
+// Accordion
+$accordion-color-dark: red;
+$accordion-icon-color-dark: #fff;
+$accordion-icon-active-color-dark: $primary;
+
+$accordion-button-icon-dark: url('data:image/svg+xml, <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.99948 13.5013H3.58789V11.5013H8.99948C11.2086 11.5013 12.9995 13.2922 12.9995 15.5013V20.9129H10.9995V15.5013C10.9995 14.3968 10.1041 13.5013 8.99948 13.5013Z" fill="#{$accordion-icon-color-dark}"/><path d="M13 4.08975V9.50134C13 10.6059 13.8954 11.5013 15 11.5013H20.4116V13.5013H15C12.7909 13.5013 11 11.7105 11 9.50134V4.08975H13Z" fill="#{$accordion-icon-color-dark}"/></svg>');
+$accordion-button-active-icon-dark: url('data:image/svg+xml, <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.99948 13.5013H3.58789V11.5013H8.99948C11.2086 11.5013 12.9995 13.2922 12.9995 15.5013V20.9129H10.9995V15.5013C10.9995 14.3968 10.1041 13.5013 8.99948 13.5013Z" fill="#{$accordion-icon-active-color-dark}"/><path d="M13 4.08975V9.50134C13 10.6059 13.8954 11.5013 15 11.5013H20.4116V13.5013H15C12.7909 13.5013 11 11.7105 11 9.50134V4.08975H13Z" fill="#{$accordion-icon-active-color-dark}"/></svg>');
