@@ -7,12 +7,12 @@
 
         <div class="page-view-header-start">
 
-          <Link v-if="previousUrl" :href="previousUrl" class="btn btn-transparent">
+          <a v-if="previousUrl" :href="previousUrl" class="btn btn-transparent">
             <div class="btn-inner-wrapper">
               <IconAngleLeft/>
               Back
             </div>
-          </Link>
+          </a>
 
           <slot name="title">
             <h1 class="page-view-title h2" v-if="title">{{ title }}</h1>
@@ -38,7 +38,6 @@
 </template>
 
 <script setup>
-import {Link} from '@inertiajs/vue3';
 import IconAngleLeft from "../Icon/IconAngleLeft.vue";
 
 const props = defineProps({

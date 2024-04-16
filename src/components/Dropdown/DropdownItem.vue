@@ -1,18 +1,17 @@
 <template>
     <li>
-        <Link
+        <a
             :class="dropdownItemClass"
             :href="href"
             :aria-disabled="disabled ? 'true' : 'false'"
             :target="target"
         >
             <slot/>
-        </Link>
+        </a>
     </li>
 </template>
 
 <script setup>
-import {Link} from "@inertiajs/vue3";
 import {computed} from "vue";
 
 const props = defineProps({

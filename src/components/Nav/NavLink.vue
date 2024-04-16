@@ -1,12 +1,10 @@
 <template>
-  <Link
-    :class="navLinkClass"
-    :disabled="disabled"
-    :to="to"
-    :href="href"
-    :external="external"
-    :rel="rel"
-    :target="target"
+  <a
+      :class="navLinkClass"
+      :disabled="disabled"
+      :href="href"
+      :rel="rel"
+      :target="target"
   >
 
     <slot name="icon"/>
@@ -15,12 +13,11 @@
 
     <IconArrowTopRight v-if="external"/>
 
-  </Link>
+  </a>
 </template>
 
 <script setup>
 import {computed} from "vue";
-import {Link} from "@inertiajs/vue3";
 import IconArrowTopRight from "../Icon/IconArrowTopRight.vue";
 
 const props = defineProps({
