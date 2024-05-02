@@ -29,8 +29,6 @@
 </template>
 
 <script setup>
-import EntitySelectedCounter from "@/Components/Entity/EntitySelectedCounter.vue";
-
 const props = defineProps({
   totalItems: {
     type: Number,
