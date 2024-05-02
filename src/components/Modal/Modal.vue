@@ -39,7 +39,7 @@
                     type="button"
                     class="btn-close"
                     aria-label="Close"
-                    @click="close()"
+                    @click="hide()"
                 ></button>
               </slot>
             </template>
@@ -54,7 +54,7 @@
                 type="button"
                 :class="modalCancelClass"
                 :disabled="cancelDisabled"
-                @click="close()"
+                @click="hide()"
             >
               {{ cancelTitle }}
             </Button>
@@ -62,7 +62,7 @@
               <Button
                   type="button"
                   :variant="okVariant"
-                  @click="onOk">
+                  @click="onOk()">
                 {{ okTitle }}
               </Button>
             </slot>
