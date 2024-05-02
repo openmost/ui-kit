@@ -3,6 +3,9 @@ import './scss/app.scss';
 // Alert
 import Alert from "./components/Alert/Alert.vue";
 
+// Auth
+import SignInWithOpenmostButton from "./components/Auth/SignInWithOpenmostButton.vue";
+
 // Button
 import Button from "./components/Button/Button.vue";
 import ButtonGroup from "./components/Button/ButtonGroup.vue";
@@ -72,6 +75,7 @@ import IconDelete from "./components/Icon/IconDelete.vue";
 import IconEdit from "./components/Icon/IconEdit.vue";
 import IconExpand from "./components/Icon/IconExpand.vue";
 import IconExport from "./components/Icon/IconExport.vue";
+import IconExternalLink from "./components/Icon/IconExternalLink.vue";
 import IconFilter from "./components/Icon/IconFilter.vue";
 import IconForm from "./components/Icon/IconForm.vue";
 import IconFunnel from "./components/Icon/IconFunnel.vue";
@@ -134,6 +138,8 @@ import Tr from "./components/Table/Tr.vue";
 
 export {
     Alert,
+
+    SignInWithOpenmostButton,
 
     Button,
     ButtonGroup,
@@ -199,6 +205,7 @@ export {
     IconEdit,
     IconExpand,
     IconExport,
+    IconExternalLink,
     IconFilter,
     IconForm,
     IconFunnel,

@@ -1,27 +1,32 @@
 <template>
-  <div>
-    <h1>Openmost UI Kit</h1>
-    <Alert variant="danger" show>Test</Alert>
-    <Button type="submit" data-bs-target="#test" data-bs-toggle="modal">trigger</Button>
-    <Modal id="test">Test</Modal>
+  <main class="py-5">
+    <PageView title="Demo">
 
-    <Dropdown text="Click dropdown">
-      <DropdownItem href="https://test.com" external>Test</DropdownItem>
-    </Dropdown>
+      {{ state ? 'OUI' : 'NON' }}
 
-    <Button href="https://coucou.fr">Test</Button>
-    <Button href="https://coucou.fr" is="div">Test</Button>
-    <Button>Test</Button>
-    <Button href="https://coucou.fr" :is="Link">Test</Button>
+      <hr>
 
-  </div>
+      <Modal
+          trigger-variant="outline-danger"
+          trigger-text="Hey"
+          :trigger-icon="IconDanger"
+          @ok="onOk"
+      >Test
+      </Modal>
+
+    </PageView>
+  </main>
 </template>
 
 <script setup lang="ts">
-import {Link} from "@inertiajs/vue3";
-import Alert from "./components/Alert/Alert.vue";
+import PageView from "./components/Page/PageView.vue";
 import Modal from "./components/Modal/Modal.vue";
-import Button from "./components/Button/Button.vue";
-import Dropdown from "./components/Dropdown/Dropdown.vue";
-import DropdownItem from "./components/Dropdown/DropdownItem.vue";
+import IconDanger from "./components/Icon/IconDanger.vue";
+import {ref} from "vue";
+
+const state = ref(false);
+
+function onOk() {
+  state.value = true;
+}
 </script>
