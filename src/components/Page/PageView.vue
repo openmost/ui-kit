@@ -14,9 +14,13 @@
             </div>
           </a>
 
+          <slot name="title-prepend"/>
+
           <slot name="title">
             <h1 class="page-view-title h2" v-if="title">{{ title }}</h1>
           </slot>
+
+          <slot name="title-append"/>
 
         </div>
 
