@@ -108,6 +108,7 @@ import NavLink from "./components/Nav/NavLink.vue";
 
 // Page
 import PageView from "./components/Page/PageView.vue";
+import PageSubView from "./components/Page/PageSubView.vue";
 
 // Table
 import Table from "./components/Table/Table.vue";
@@ -217,6 +218,7 @@ export {
     NavLink,
 
     PageView,
+    PageSubView,
 
     Table,
     Tbody,
