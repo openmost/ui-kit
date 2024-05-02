@@ -7,12 +7,12 @@
 
         <div class="page-view-header-start">
 
-          <a v-if="previousUrl" :href="previousUrl" class="btn btn-transparent">
+          <component :is="previousComponent" v-if="previousUrl" :href="previousUrl" class="btn btn-transparent">
             <div class="btn-inner-wrapper">
               <IconAngleLeft/>
               Back
             </div>
-          </a>
+          </component>
 
           <slot name="title-prepend"/>
 
@@ -56,6 +56,10 @@ const props = defineProps({
   previousUrl: {
     type: String,
   },
+  previousComponent: {
+    type: [Object, String],
+    default: 'a',
+  },
   title: {
     type: String,
   }
@@ -63,10 +67,6 @@ const props = defineProps({
 </script>
 
 <style lang="scss">
-.page-view {
-  padding-top: 80px;
-}
-
 .page-view-header {
   display: flex;
   justify-content: space-between;
