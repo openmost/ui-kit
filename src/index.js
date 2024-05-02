@@ -75,6 +75,8 @@ import IconGoal from "./components/Icon/IconGoal.vue";
 import IconHeatmap from "./components/Icon/IconHeatmap.vue";
 import IconImport from "./components/Icon/IconImport.vue";
 import IconInfo from "./components/Icon/IconInfo.vue";
+import IconLayoutGrid from "./components/Icon/IconLayoutGrid.vue";
+import IconLayoutList from "./components/Icon/IconLayoutList.vue";
 import IconLogout from "./components/Icon/IconLogout.vue";
 import IconMarker from "./components/Icon/IconMarker.vue";
 import IconMatomo from "./components/Icon/IconMatomo.vue";
@@ -190,6 +192,8 @@ export {
     IconHeatmap,
     IconImport,
     IconInfo,
+    IconLayoutGrid,
+    IconLayoutList,
     IconLogout,
     IconMarker,
     IconMatomo,
