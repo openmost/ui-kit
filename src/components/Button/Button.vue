@@ -1,12 +1,14 @@
 <template>
   <component
-    aria-label="ariaLabel"
-    :class="buttonClass"
-    :disabled="disabled"
-    :is="buttonTag"
-    :rel="rel"
-    :to="to"
-    :type="type"
+      aria-label="ariaLabel"
+      :class="buttonClass"
+      :disabled="disabled"
+      :is="buttonTag"
+      :rel="buttonRel"
+      :target="buttonTarget"
+      :type="buttonType"
+      :href="href"
+      :to="to"
   >
     <div class="btn-inner-wrapper" v-if="$slots.icon">
 
@@ -24,7 +26,7 @@
 </template>
 
 <script setup>
-import {computed, resolveComponent} from "vue";
+import {computed} from "vue";
 
 const props = defineProps({
   ariaLabel: {
@@ -35,14 +37,17 @@ const props = defineProps({
   },
   disabled: {
     type: Boolean,
+    default: false,
+  },
+  href: {
+    type: [String, Object],
   },
   iconPosition: {
     type: String,
     default: 'start'
   },
-  rel: {
-    type: String,
-    default: null,
+  is: {
+    type: [Object, String],
   },
   size: {
     type: String,
@@ -79,7 +84,23 @@ const buttonClass = computed(() => {
 })
 
 const buttonTag = computed(() => {
-  return (props.to || props.href) ? resolveComponent('NuxtLink') : props.tag;
+ if (props.is) {
+   return props.is
+ }
+
+  return props.href ? 'a' : 'button';
+});
+
+const buttonType = computed(() => {
+  return props.href ? '' : props.type;
+})
+
+const buttonRel = computed(() => {
+  return props.external ? 'noopener noreferrer' : null;
+});
+
+const buttonTarget = computed(() => {
+  return props.external ? '_blank' : null;
 })
 </script>
 

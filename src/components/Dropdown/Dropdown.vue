@@ -74,5 +74,9 @@ const dropdownToggleClass = computed(() => {
 <style lang="scss">
 .dropdown-menu {
     overflow: hidden;
+
+  .trigger-text {
+    flex-grow: 1;
+  }
 }
 </style>

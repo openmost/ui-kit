@@ -1,8 +1,11 @@
 <template>
-  <a
+  <component
+      :is="is"
       :class="navLinkClass"
       :disabled="disabled"
+      :to="to"
       :href="href"
+      :external="external"
       :rel="rel"
       :target="target"
   >
@@ -13,7 +16,7 @@
 
     <IconArrowTopRight v-if="external"/>
 
-  </a>
+  </component>
 </template>
 
 <script setup>
