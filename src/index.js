@@ -58,6 +58,9 @@ import IconArrowUp from "./components/Icon/IconArrowUp.vue";
 import IconCalendar from "./components/Icon/IconCalendar.vue";
 import IconCheck from "./components/Icon/IconCheck.vue";
 import IconClose from "./components/Icon/IconClose.vue";
+import IconCode from "./components/Icon/IconCode.vue";
+import IconCog from "./components/Icon/IconCog.vue";
+import IconCogPen from "./components/Icon/IconCogPen.vue";
 import IconCopy from "./components/Icon/IconCopy.vue";
 import IconCursor from "./components/Icon/IconCursor.vue";
 import IconCustomAlert from "./components/Icon/IconCustomAlert.vue";
@@ -69,6 +72,7 @@ import IconDelete from "./components/Icon/IconDelete.vue";
 import IconEdit from "./components/Icon/IconEdit.vue";
 import IconExpand from "./components/Icon/IconExpand.vue";
 import IconExport from "./components/Icon/IconExport.vue";
+import IconFilter from "./components/Icon/IconFilter.vue";
 import IconForm from "./components/Icon/IconForm.vue";
 import IconFunnel from "./components/Icon/IconFunnel.vue";
 import IconGoal from "./components/Icon/IconGoal.vue";
@@ -77,19 +81,25 @@ import IconImport from "./components/Icon/IconImport.vue";
 import IconInfo from "./components/Icon/IconInfo.vue";
 import IconLayoutGrid from "./components/Icon/IconLayoutGrid.vue";
 import IconLayoutList from "./components/Icon/IconLayoutList.vue";
+import IconLock from "./components/Icon/IconLock.vue";
+import IconLockOpen from "./components/Icon/IconLockOpen.vue";
 import IconLogout from "./components/Icon/IconLogout.vue";
 import IconMarker from "./components/Icon/IconMarker.vue";
 import IconMatomo from "./components/Icon/IconMatomo.vue";
 import IconOnPremise from "./components/Icon/IconOnPremise.vue";
 import IconOpenmost from "./components/Icon/IconOpenmost.vue";
 import IconPlus from "./components/Icon/IconPlus.vue";
+import IconPuzzle from "./components/Icon/IconPuzzle.vue";
 import IconRefresh from "./components/Icon/IconRefresh.vue";
+import IconRequired from "./components/Icon/IconRequired.vue";
 import IconScheduledReport from "./components/Icon/IconScheduledReport.vue";
 import IconSearch from "./components/Icon/IconSearch.vue";
 import IconSegment from "./components/Icon/IconSegment.vue";
 import IconSessionRecording from "./components/Icon/IconSessionRecording.vue";
 import IconSite from "./components/Icon/IconSite.vue";
 import IconSuccess from "./components/Icon/IconSuccess.vue";
+import IconTag from "./components/Icon/IconTag.vue";
+import IconTagPlus from "./components/Icon/IconTagPlus.vue";
 import IconUser from "./components/Icon/IconUser.vue";
 import IconUsers from "./components/Icon/IconUsers.vue";
 import IconWarning from "./components/Icon/IconWarning.vue";
@@ -175,6 +185,9 @@ export {
     IconCalendar,
     IconCheck,
     IconClose,
+    IconCode,
+    IconCog,
+    IconCogPen,
     IconCopy,
     IconCursor,
     IconCustomAlert,
@@ -186,6 +199,7 @@ export {
     IconEdit,
     IconExpand,
     IconExport,
+    IconFilter,
     IconForm,
     IconFunnel,
     IconGoal,
@@ -194,19 +208,25 @@ export {
     IconInfo,
     IconLayoutGrid,
     IconLayoutList,
+    IconLock,
+    IconLockOpen,
     IconLogout,
     IconMarker,
     IconMatomo,
     IconOnPremise,
     IconOpenmost,
     IconPlus,
+    IconPuzzle,
     IconRefresh,
+    IconRequired,
     IconScheduledReport,
     IconSearch,
     IconSegment,
     IconSessionRecording,
     IconSite,
     IconSuccess,
+    IconTag,
+    IconTagPlus,
     IconUser,
     IconUsers,
     IconWarning,
