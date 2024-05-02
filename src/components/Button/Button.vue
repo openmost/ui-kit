@@ -84,9 +84,9 @@ const buttonClass = computed(() => {
 })
 
 const buttonTag = computed(() => {
- if (props.is) {
-   return props.is
- }
+  if (props.is) {
+    return props.is
+  }
 
   return props.href ? 'a' : 'button';
 });

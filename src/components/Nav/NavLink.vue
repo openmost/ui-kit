@@ -33,6 +33,9 @@ const props = defineProps({
   to: {
     type: [String, Object],
   },
+  is: {
+    type: [Object, String],
+  },
   external: {
     type: Boolean,
     default: false,

@@ -7980,6 +7980,9 @@ const M5 = /* @__PURE__ */ S5(D5), I5 = ["id", "aria-labelledby"], k5 = ["id"], 
     to: {
       type: [String, Object]
     },
+    is: {
+      type: [Object, String]
+    },
     external: {
       type: Boolean,
       default: !1
@@ -7993,7 +7996,7 @@ const M5 = /* @__PURE__ */ S5(D5), I5 = ["id", "aria-labelledby"], k5 = ["id"], 
       "nav-link",
       e.external ? "external-link" : null
     ]), s = A(() => e.external ? "noopener noreferrer" : null), i = A(() => e.external ? "_blank" : null);
-    return (o, r) => (u(), k(Le(o.is), {
+    return (o, r) => (u(), k(Le(t.is), {
       class: V(n.value),
       disabled: t.disabled,
       to: t.to,
@@ -8042,6 +8045,9 @@ const M5 = /* @__PURE__ */ S5(D5), I5 = ["id", "aria-labelledby"], k5 = ["id"], 
       type: Boolean,
       default: !1
     },
+    is: {
+      type: [Object, String]
+    },
     neverActive: {
       type: Boolean
     }
@@ -8060,6 +8066,7 @@ const M5 = /* @__PURE__ */ S5(D5), I5 = ["id", "aria-labelledby"], k5 = ["id"], 
         key: 0,
         href: t.href,
         to: t.to,
+        is: t.is,
         external: t.external,
         active: t.active,
         activeClass: t.activeClass,
@@ -8080,7 +8087,7 @@ const M5 = /* @__PURE__ */ S5(D5), I5 = ["id", "aria-labelledby"], k5 = ["id"], 
           ]),
           key: "0"
         } : void 0
-      ]), 1032, ["href", "to", "external", "active", "activeClass", "exactActive", "exactActiveClass", "disabled", "neverActive"])) : $(s.$slots, "default", { key: 1 })
+      ]), 1032, ["href", "to", "is", "external", "active", "activeClass", "exactActive", "exactActiveClass", "disabled", "neverActive"])) : $(s.$slots, "default", { key: 1 })
     ], 2));
   }
 }, R5 = { class: "page-view" }, P5 = { class: "container" }, F5 = { class: "page-view-header" }, Z5 = { class: "page-view-header-start" }, j5 = ["href"], z5 = { class: "btn-inner-wrapper" }, W5 = {
