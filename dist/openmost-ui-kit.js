@@ -1,4 +1,4 @@
-import { openBlock as c, createElementBlock as h, createElementVNode as f, computed as L, normalizeClass as x, createBlock as k, createCommentVNode as B, renderSlot as y, createTextVNode as Y, toDisplayString as j, createVNode as U, createStaticVNode as nt, defineComponent as gs, resolveDynamicComponent as ge, withCtx as I, normalizeStyle as Re, ref as Dt, Fragment as X, renderList as J, createSlots as ht, normalizeProps as vs, guardReactiveProps as bs, withDirectives as si, vModelRadio as ys, vModelText as Es, onMounted as ws } from "vue";
+import { openBlock as c, createElementBlock as h, createElementVNode as f, computed as L, normalizeClass as N, createBlock as k, createCommentVNode as B, renderSlot as y, createTextVNode as Y, toDisplayString as j, createVNode as U, createStaticVNode as nt, defineComponent as gs, resolveDynamicComponent as ge, withCtx as I, normalizeStyle as Re, ref as Dt, Fragment as X, renderList as J, createSlots as ht, normalizeProps as vs, guardReactiveProps as bs, withDirectives as si, vModelRadio as ys, vModelText as Es, onMounted as ws } from "vue";
 const $ = (t, e) => {
   const n = t.__vccOpts || t;
   for (const [i, s] of e)
@@ -141,7 +141,7 @@ const O1 = /* @__PURE__ */ $(to, [["render", ro]]), lo = { class: "alert-icon" }
 }, uo = {
   key: 1,
   class: "actions-wrapper"
-}, $0 = {
+}, E0 = {
   __name: "Alert",
   props: {
     dismissible: {
@@ -171,7 +171,7 @@ const O1 = /* @__PURE__ */ $(to, [["render", ro]]), lo = { class: "alert-icon" }
     }
     return (s, o) => t.show ? (c(), h("div", {
       key: 0,
-      class: x(n.value),
+      class: N(n.value),
       role: "alert"
     }, [
       f("div", lo, [
@@ -216,7 +216,7 @@ const O1 = /* @__PURE__ */ $(to, [["render", ro]]), lo = { class: "alert-icon" }
 function _o(t, e) {
   return c(), h("svg", ho, Co);
 }
-const mo = /* @__PURE__ */ $(fo, [["render", _o]]), go = ["href"], vo = { class: "btn-inner-wrapper" }, A0 = /* @__PURE__ */ gs({
+const mo = /* @__PURE__ */ $(fo, [["render", _o]]), go = ["href"], vo = { class: "btn-inner-wrapper" }, w0 = /* @__PURE__ */ gs({
   __name: "SignInWithOpenmostButton",
   props: {
     href: {
@@ -296,7 +296,7 @@ const mo = /* @__PURE__ */ $(fo, [["render", _o]]), go = ["href"], vo = { class:
     ]), i = L(() => e.is ? e.is : e.href ? "a" : "button"), s = L(() => e.href ? "" : e.type), o = L(() => e.external ? "noopener noreferrer" : null), r = L(() => e.external ? "_blank" : null);
     return (l, a) => (c(), k(ge(i.value), {
       "aria-label": "ariaLabel",
-      class: x(n.value),
+      class: N(n.value),
       disabled: t.disabled,
       rel: o.value,
       target: r.value,
@@ -318,7 +318,7 @@ const mo = /* @__PURE__ */ $(fo, [["render", _o]]), go = ["href"], vo = { class:
       _: 3
     }, 8, ["class", "disabled", "rel", "target", "type", "href", "to"]));
   }
-}, L0 = {
+}, $0 = {
   __name: "ButtonGroup",
   props: {
     ariaLabel: {
@@ -350,7 +350,7 @@ const mo = /* @__PURE__ */ $(fo, [["render", _o]]), go = ["href"], vo = { class:
       e.size ? `btn-${e.size}` : null
     ]);
     return (i, s) => (c(), k(ge(t.tag), {
-      class: x(n.value),
+      class: N(n.value),
       role: t.ariaRole,
       "aria-label": t.ariaLabel
     }, {
@@ -411,7 +411,7 @@ const Xt = /* @__PURE__ */ $($o, [["render", Lo]]), So = ["title", "abbr", "cols
     return (i, s) => (c(), h("th", {
       role: "columnheader",
       style: Re(t.thStyle),
-      class: x(n.value),
+      class: N(n.value),
       title: t.headerTitle,
       abbr: t.headerAbbr,
       colspan: t.colspan,
@@ -452,7 +452,7 @@ const Xt = /* @__PURE__ */ $($o, [["render", Lo]]), So = ["title", "abbr", "cols
     ]);
     return (i, s) => (c(), h("td", {
       role: "cell",
-      class: x(n.value),
+      class: N(n.value),
       style: Re(t.tdStyle),
       colspan: t.colspan,
       rowspan: t.rowspan
@@ -562,10 +562,10 @@ const Do = /* @__PURE__ */ $(xo, [["render", Mo]]), Io = ["aria-label", "aria-la
       n("change", u.target.checked);
     }
     return (u, d) => (c(), h("div", {
-      class: x(s.value)
+      class: N(s.value)
     }, [
       f("input", {
-        class: x(o.value),
+        class: N(o.value),
         "aria-label": t.ariaLabel,
         "aria-labelledby": t.ariaLabelledby,
         autofocus: t.autofocus,
@@ -581,7 +581,7 @@ const Do = /* @__PURE__ */ $(xo, [["render", Mo]]), Io = ["aria-label", "aria-la
         onChange: a
       }, null, 42, Io),
       f("label", {
-        class: x(r.value),
+        class: N(r.value),
         for: t.id
       }, [
         y(u.$slots, "default")
@@ -716,7 +716,7 @@ const Do = /* @__PURE__ */ $(xo, [["render", Mo]]), Io = ["aria-label", "aria-la
     }
     return (a, u) => (c(), h("div", Ho, [
       f("table", {
-        class: x(i.value)
+        class: N(i.value)
       }, [
         t.caption ? (c(), h("caption", Bo, [
           y(a.$slots, "table-caption", {}, () => [
@@ -725,20 +725,20 @@ const Do = /* @__PURE__ */ $(xo, [["render", Mo]]), Io = ["aria-label", "aria-la
         ])) : B("", !0),
         o.value.length ? (c(), k(wo, {
           key: 1,
-          class: x(t.theadClass)
+          class: N(t.theadClass)
         }, {
           default: I(() => [
             y(a.$slots, "thead-top"),
             U(Xt, {
               scope: "col",
-              class: x(t.theadTrClass)
+              class: N(t.theadTrClass)
             }, {
               default: I(() => [
                 (c(!0), h(X, null, J(o.value, (d, m) => (c(), k(an, {
                   key: d.key,
                   "aria-colindex": m + 1,
                   sortable: d.sortable,
-                  class: x(d.class),
+                  class: N(d.class),
                   variant: d.variant,
                   thStyle: d.thStyle,
                   thClass: d.thClass,
@@ -782,19 +782,19 @@ const Do = /* @__PURE__ */ $(xo, [["render", Mo]]), Io = ["aria-label", "aria-la
         })) : B("", !0),
         t.items.length || !t.loading ? (c(), k(cn, {
           key: 3,
-          class: x(s.value)
+          class: N(s.value)
         }, {
           default: I(() => [
             y(a.$slots, "top-row"),
             (c(!0), h(X, null, J(t.items, (d, m) => (c(), k(Xt, {
-              class: x(t.tbodyTrClass),
+              class: N(t.tbodyTrClass),
               key: m
             }, {
               default: I(() => [
                 (c(!0), h(X, null, J(o.value, (C, _) => (c(), k(Vo, {
                   "aria-colindex": _ + 1,
                   key: C.key,
-                  class: x(C.class),
+                  class: N(C.class),
                   tdClass: C.tdClass,
                   variant: d.variant,
                   colspan: d.colspan,
@@ -822,18 +822,18 @@ const Do = /* @__PURE__ */ $(xo, [["render", Mo]]), Io = ["aria-label", "aria-la
         y(a.$slots, "default"),
         o.value.length && t.footClone ? (c(), k(Do, {
           key: 4,
-          class: x(t.tfootClass)
+          class: N(t.tfootClass)
         }, {
           default: I(() => [
             U(Xt, {
-              class: x(t.tfootTrClass)
+              class: N(t.tfootTrClass)
             }, {
               default: I(() => [
                 (c(!0), h(X, null, J(o.value, (d, m) => (c(), k(an, {
                   key: d.key,
                   "aria-colindex": m + 1,
                   sortable: d.sortable,
-                  class: x(d.class),
+                  class: N(d.class),
                   variant: d.variant,
                   style: Re(d.thStyle),
                   thClass: d.thClass,
@@ -875,7 +875,7 @@ const Do = /* @__PURE__ */ $(xo, [["render", Mo]]), Io = ["aria-label", "aria-la
   setup(t) {
     return (e, n) => (c(), h("td", null, Fo));
   }
-}, jo = { class: "datatable-body" }, S0 = {
+}, jo = { class: "datatable-body" }, A0 = {
   __name: "DataTable",
   props: {
     items: {
@@ -898,7 +898,7 @@ const Do = /* @__PURE__ */ $(xo, [["render", Mo]]), Io = ["aria-label", "aria-la
       n.loading ? "datatable-loading" : null
     ]);
     return (r, l) => (c(), h("div", {
-      class: x(o.value)
+      class: N(o.value)
     }, [
       f("div", jo, [
         U(Ro, {
@@ -2211,7 +2211,7 @@ const i1 = (t) => {
     n.includes("#") && !n.startsWith("#") && (n = `#${n.split("#")[1]}`), e = n && n !== "#" ? n.trim() : null;
   }
   return e ? e.split(",").map((n) => Oi(n)).join(",") : null;
-}, N = {
+}, x = {
   find(t, e = document.documentElement) {
     return [].concat(...Element.prototype.querySelectorAll.call(e, t));
   },
@@ -2253,22 +2253,22 @@ const i1 = (t) => {
   },
   getSelectorFromElement(t) {
     const e = i1(t);
-    return e && N.findOne(e) ? e : null;
+    return e && x.findOne(e) ? e : null;
   },
   getElementFromSelector(t) {
     const e = i1(t);
-    return e ? N.findOne(e) : null;
+    return e ? x.findOne(e) : null;
   },
   getMultipleElementsFromSelector(t) {
     const e = i1(t);
-    return e ? N.find(e) : [];
+    return e ? x.find(e) : [];
   }
 }, jt = (t, e = "hide") => {
   const n = `click.dismiss${t.EVENT_KEY}`, i = t.NAME;
   g.on(document, n, `[data-bs-dismiss="${i}"]`, function(s) {
     if (["A", "AREA"].includes(this.tagName) && s.preventDefault(), Te(this))
       return;
-    const o = N.getElementFromSelector(this) || this.closest(`.${i}`);
+    const o = x.getElementFromSelector(this) || this.closest(`.${i}`);
     t.getOrCreateInstance(o)[e]();
   });
 }, z2 = "alert", W2 = "bs.alert", Fi = `.${W2}`, K2 = `close${Fi}`, Y2 = `closed${Fi}`, q2 = "fade", U2 = "show";
@@ -2407,7 +2407,7 @@ const pr = "carousel", Cr = "bs.carousel", Ne = `.${Cr}`, Zi = ".data-api", _r =
 };
 class mt extends pe {
   constructor(e, n) {
-    super(e, n), this._interval = null, this._activeElement = null, this._isSliding = !1, this.touchTimeout = null, this._swipeHelper = null, this._indicatorsElement = N.findOne(Mr, this._element), this._addEventListeners(), this._config.ride === ji && this.cycle();
+    super(e, n), this._interval = null, this._activeElement = null, this._isSliding = !1, this.touchTimeout = null, this._swipeHelper = null, this._indicatorsElement = x.findOne(Mr, this._element), this._addEventListeners(), this._config.ride === ji && this.cycle();
   }
   // Getters
   static get Default() {
@@ -2469,7 +2469,7 @@ class mt extends pe {
     this._config.keyboard && g.on(this._element, br, (e) => this._keydown(e)), this._config.pause === "hover" && (g.on(this._element, yr, () => this.pause()), g.on(this._element, Er, () => this._maybeEnableCycle())), this._config.touch && Ht.isSupported() && this._addTouchEventListeners();
   }
   _addTouchEventListeners() {
-    for (const i of N.find(xr, this._element))
+    for (const i of x.find(xr, this._element))
       g.on(i, wr, (s) => s.preventDefault());
     const n = {
       leftCallback: () => this._slide(this._directionToOrder(Ye)),
@@ -2492,9 +2492,9 @@ class mt extends pe {
   _setActiveIndicatorElement(e) {
     if (!this._indicatorsElement)
       return;
-    const n = N.findOne(zi, this._indicatorsElement);
+    const n = x.findOne(zi, this._indicatorsElement);
     n.classList.remove(wt), n.removeAttribute("aria-current");
-    const i = N.findOne(`[data-bs-slide-to="${e}"]`, this._indicatorsElement);
+    const i = x.findOne(`[data-bs-slide-to="${e}"]`, this._indicatorsElement);
     i && (i.classList.add(wt), i.setAttribute("aria-current", "true"));
   }
   _updateInterval() {
@@ -2531,10 +2531,10 @@ class mt extends pe {
     return this._element.classList.contains(Lr);
   }
   _getActive() {
-    return N.findOne(Nr, this._element);
+    return x.findOne(Nr, this._element);
   }
   _getItems() {
-    return N.find(Wi, this._element);
+    return x.find(Wi, this._element);
   }
   _clearInterval() {
     this._interval && (clearInterval(this._interval), this._interval = null);
@@ -2562,7 +2562,7 @@ class mt extends pe {
   }
 }
 g.on(document, Ar, Dr, function(t) {
-  const e = N.getElementFromSelector(this);
+  const e = x.getElementFromSelector(this);
   if (!e || !e.classList.contains(ji))
     return;
   t.preventDefault();
@@ -2578,7 +2578,7 @@ g.on(document, Ar, Dr, function(t) {
   n.prev(), n._maybeEnableCycle();
 });
 g.on(window, $r, () => {
-  const t = N.find(Ir);
+  const t = x.find(Ir);
   for (const e of t)
     mt.getOrCreateInstance(e);
 });
@@ -2593,9 +2593,9 @@ const Rr = "collapse", Pr = "bs.collapse", gt = `.${Pr}`, Fr = ".data-api", Zr =
 class ft extends pe {
   constructor(e, n) {
     super(e, n), this._isTransitioning = !1, this._triggerArray = [];
-    const i = N.find(T1);
+    const i = x.find(T1);
     for (const s of i) {
-      const o = N.getSelectorFromElement(s), r = N.find(o).filter((l) => l === this._element);
+      const o = x.getSelectorFromElement(s), r = x.find(o).filter((l) => l === this._element);
       o !== null && r.length && this._triggerArray.push(s);
     }
     this._initializeChildren(), this._config.parent || this._addAriaAndCollapsedClass(this._triggerArray, this._isShown()), this._config.toggle && this.toggle();
@@ -2637,7 +2637,7 @@ class ft extends pe {
     const n = this._getDimension();
     this._element.style[n] = `${this._element.getBoundingClientRect()[n]}px`, Ct(this._element), this._element.classList.add($t), this._element.classList.remove(Ue, o1);
     for (const s of this._triggerArray) {
-      const o = N.getElementFromSelector(s);
+      const o = x.getElementFromSelector(s);
       o && !this._isShown(o) && this._addAriaAndCollapsedClass([s], !1);
     }
     this._isTransitioning = !0;
@@ -2661,13 +2661,13 @@ class ft extends pe {
       return;
     const e = this._getFirstLevelChildren(T1);
     for (const n of e) {
-      const i = N.getElementFromSelector(n);
+      const i = x.getElementFromSelector(n);
       i && this._addAriaAndCollapsedClass([n], this._isShown(i));
     }
   }
   _getFirstLevelChildren(e) {
-    const n = N.find(qr, this._config.parent);
-    return N.find(e, this._config.parent).filter((i) => !n.includes(i));
+    const n = x.find(qr, this._config.parent);
+    return x.find(e, this._config.parent).filter((i) => !n.includes(i));
   }
   _addAriaAndCollapsedClass(e, n) {
     if (e.length)
@@ -2689,7 +2689,7 @@ class ft extends pe {
 }
 g.on(document, Kr, T1, function(t) {
   (t.target.tagName === "A" || t.delegateTarget && t.delegateTarget.tagName === "A") && t.preventDefault();
-  for (const e of N.getMultipleElementsFromSelector(this))
+  for (const e of x.getMultipleElementsFromSelector(this))
     ft.getOrCreateInstance(e, {
       toggle: !1
     }).toggle();
@@ -2712,7 +2712,7 @@ const En = "dropdown", tl = "bs.dropdown", Ze = `.${tl}`, Y1 = ".data-api", nl =
 };
 class _e extends pe {
   constructor(e, n) {
-    super(e, n), this._popper = null, this._parent = this._element.parentNode, this._menu = N.next(this._element, Mt)[0] || N.prev(this._element, Mt)[0] || N.findOne(Mt, this._parent), this._inNavbar = this._detectNavbar();
+    super(e, n), this._popper = null, this._parent = this._element.parentNode, this._menu = x.next(this._element, Mt)[0] || x.prev(this._element, Mt)[0] || x.findOne(Mt, this._parent), this._inNavbar = this._detectNavbar();
   }
   // Getters
   static get Default() {
@@ -2829,7 +2829,7 @@ class _e extends pe {
     key: e,
     target: n
   }) {
-    const i = N.find(gl, this._menu).filter((s) => st(s));
+    const i = x.find(gl, this._menu).filter((s) => st(s));
     i.length && W1(i, n, e === $n, !i.includes(n)).focus();
   }
   // Static
@@ -2846,7 +2846,7 @@ class _e extends pe {
   static clearMenus(e) {
     if (e.button === sl || e.type === "keyup" && e.key !== wn)
       return;
-    const n = N.find(Cl);
+    const n = x.find(Cl);
     for (const i of n) {
       const s = _e.getInstance(i);
       if (!s || s._config.autoClose === !1)
@@ -2865,7 +2865,7 @@ class _e extends pe {
     if (!s && !i || n && !i)
       return;
     e.preventDefault();
-    const o = this.matches(ke) ? this : N.prev(this, ke)[0] || N.next(this, ke)[0] || N.findOne(ke, e.delegateTarget.parentNode), r = _e.getOrCreateInstance(o);
+    const o = this.matches(ke) ? this : x.prev(this, ke)[0] || x.next(this, ke)[0] || x.findOne(ke, e.delegateTarget.parentNode), r = _e.getOrCreateInstance(o);
     if (s) {
       e.stopPropagation(), r.show(), r._selectMenuItem(e);
       return;
@@ -2993,7 +2993,7 @@ class Gi extends _t {
     } = this._config;
     if (e.target === document || e.target === n || n.contains(e.target))
       return;
-    const i = N.focusableChildren(n);
+    const i = x.focusableChildren(n);
     i.length === 0 ? n.focus() : this._lastTabNavDirection === Sn ? i[i.length - 1].focus() : i[0].focus();
   }
   _handleKeydown(e) {
@@ -3054,7 +3054,7 @@ class V1 {
       n(e);
       return;
     }
-    for (const i of N.find(e, this._element))
+    for (const i of x.find(e, this._element))
       n(i);
   }
 }
@@ -3069,7 +3069,7 @@ const Pl = "modal", Fl = "bs.modal", ue = `.${Fl}`, Zl = ".data-api", jl = "Esca
 };
 let Rt = class Ji extends pe {
   constructor(e, n) {
-    super(e, n), this._dialog = N.findOne(ea, this._element), this._backdrop = this._initializeBackDrop(), this._focustrap = this._initializeFocusTrap(), this._isShown = !1, this._isTransitioning = !1, this._scrollBar = new V1(), this._addEventListeners();
+    super(e, n), this._dialog = x.findOne(ea, this._element), this._backdrop = this._initializeBackDrop(), this._focustrap = this._initializeFocusTrap(), this._isShown = !1, this._isTransitioning = !1, this._scrollBar = new V1(), this._addEventListeners();
   }
   // Getters
   static get Default() {
@@ -3114,7 +3114,7 @@ let Rt = class Ji extends pe {
   }
   _showElement(e) {
     document.body.contains(this._element) || document.body.append(this._element), this._element.style.display = "block", this._element.removeAttribute("aria-hidden"), this._element.setAttribute("aria-modal", !0), this._element.setAttribute("role", "dialog"), this._element.scrollTop = 0;
-    const n = N.findOne(ta, this._dialog);
+    const n = x.findOne(ta, this._dialog);
     n && (n.scrollTop = 0), Ct(this._element), this._element.classList.add(xn);
     const i = () => {
       this._config.focus && this._focustrap.activate(), this._isTransitioning = !1, g.trigger(this._element, Kl, {
@@ -3194,13 +3194,13 @@ let Rt = class Ji extends pe {
   }
 };
 g.on(document, Ql, na, function(t) {
-  const e = N.getElementFromSelector(this);
+  const e = x.getElementFromSelector(this);
   ["A", "AREA"].includes(this.tagName) && t.preventDefault(), g.one(e, Xi, (s) => {
     s.defaultPrevented || g.one(e, Qi, () => {
       st(this) && this.focus();
     });
   });
-  const n = N.findOne(Jl);
+  const n = x.findOne(Jl);
   n && Rt.getInstance(n).hide(), Rt.getOrCreateInstance(e).toggle(this);
 });
 jt(Rt);
@@ -3303,21 +3303,21 @@ class Ve extends pe {
   }
 }
 g.on(document, pa, _a, function(t) {
-  const e = N.getElementFromSelector(this);
+  const e = x.getElementFromSelector(this);
   if (["A", "AREA"].includes(this.tagName) && t.preventDefault(), Te(this))
     return;
   g.one(e, ns, () => {
     st(this) && this.focus();
   });
-  const n = N.findOne(ts);
+  const n = x.findOne(ts);
   n && n !== e && Ve.getInstance(n).hide(), Ve.getOrCreateInstance(e).toggle(this);
 });
 g.on(window, la, () => {
-  for (const t of N.find(ts))
+  for (const t of x.find(ts))
     Ve.getOrCreateInstance(t).show();
 });
 g.on(window, ha, () => {
-  for (const t of N.find("[aria-modal][class*=show][class*=offcanvas-]"))
+  for (const t of x.find("[aria-modal][class*=show][class*=offcanvas-]"))
     getComputedStyle(t).position !== "fixed" && Ve.getOrCreateInstance(t).hide();
 });
 jt(Ve);
@@ -3447,7 +3447,7 @@ class Ta extends _t {
       }, Sa);
   }
   _setContent(e, n, i) {
-    const s = N.findOne(i, e);
+    const s = x.findOne(i, e);
     if (s) {
       if (n = this._resolvePossibleFunction(n), !n) {
         s.remove();
@@ -3914,11 +3914,11 @@ class Kt extends pe {
   }
   _initializeTargetsAndObservables() {
     this._targetLinks = /* @__PURE__ */ new Map(), this._observableSections = /* @__PURE__ */ new Map();
-    const e = N.find(c1, this._config.target);
+    const e = x.find(c1, this._config.target);
     for (const n of e) {
       if (!n.hash || Te(n))
         continue;
-      const i = N.findOne(decodeURI(n.hash), this._element);
+      const i = x.findOne(decodeURI(n.hash), this._element);
       st(i) && (this._targetLinks.set(decodeURI(n.hash), n), this._observableSections.set(n.hash, i));
     }
   }
@@ -3929,16 +3929,16 @@ class Kt extends pe {
   }
   _activateParents(e) {
     if (e.classList.contains(s4)) {
-      N.findOne(u4, e.closest(d4)).classList.add(We);
+      x.findOne(u4, e.closest(d4)).classList.add(We);
       return;
     }
-    for (const n of N.parents(e, r4))
-      for (const i of N.prev(n, c4))
+    for (const n of x.parents(e, r4))
+      for (const i of x.prev(n, c4))
         i.classList.add(We);
   }
   _clearActiveClass(e) {
     e.classList.remove(We);
-    const n = N.find(`${c1}.${We}`, e);
+    const n = x.find(`${c1}.${We}`, e);
     for (const i of n)
       i.classList.remove(We);
   }
@@ -3955,7 +3955,7 @@ class Kt extends pe {
   }
 }
 g.on(window, i4, () => {
-  for (const t of N.find(o4))
+  for (const t of x.find(o4))
     Kt.getOrCreateInstance(t);
 });
 fe(Kt);
@@ -3984,7 +3984,7 @@ class tt extends pe {
   _activate(e, n) {
     if (!e)
       return;
-    e.classList.add(He), this._activate(N.getElementFromSelector(e));
+    e.classList.add(He), this._activate(x.getElementFromSelector(e));
     const i = () => {
       if (e.getAttribute("role") !== "tab") {
         e.classList.add(u1);
@@ -3999,7 +3999,7 @@ class tt extends pe {
   _deactivate(e, n) {
     if (!e)
       return;
-    e.classList.remove(He), e.blur(), this._deactivate(N.getElementFromSelector(e));
+    e.classList.remove(He), e.blur(), this._deactivate(x.getElementFromSelector(e));
     const i = () => {
       if (e.getAttribute("role") !== "tab") {
         e.classList.remove(u1);
@@ -4028,7 +4028,7 @@ class tt extends pe {
     }), tt.getOrCreateInstance(i).show());
   }
   _getChildren() {
-    return N.find(h1, this._parent);
+    return x.find(h1, this._parent);
   }
   _getActiveElem() {
     return this._getChildren().find((e) => this._elemIsActive(e)) || null;
@@ -4044,7 +4044,7 @@ class tt extends pe {
     e.setAttribute("aria-selected", n), i !== e && this._setAttributeIfNotExists(i, "role", "presentation"), n || e.setAttribute("tabindex", "-1"), this._setAttributeIfNotExists(e, "role", "tab"), this._setInitialAttributesOnTargetPanel(e);
   }
   _setInitialAttributesOnTargetPanel(e) {
-    const n = N.getElementFromSelector(e);
+    const n = x.getElementFromSelector(e);
     n && (this._setAttributeIfNotExists(n, "role", "tabpanel"), e.id && this._setAttributeIfNotExists(n, "aria-labelledby", `${e.id}`));
   }
   _toggleDropDown(e, n) {
@@ -4052,7 +4052,7 @@ class tt extends pe {
     if (!i.classList.contains(A4))
       return;
     const s = (o, r) => {
-      const l = N.findOne(o, i);
+      const l = x.findOne(o, i);
       l && l.classList.toggle(r, n);
     };
     s(ss, He), s(L4, u1), i.setAttribute("aria-expanded", n);
@@ -4065,7 +4065,7 @@ class tt extends pe {
   }
   // Try to get the inner element (usually the .nav-link)
   _getInnerElement(e) {
-    return e.matches(h1) ? e : N.findOne(h1, e);
+    return e.matches(h1) ? e : x.findOne(h1, e);
   }
   // Try to get the outer element (usually the .nav-item)
   _getOuterElement(e) {
@@ -4087,7 +4087,7 @@ g.on(document, b4, os, function(t) {
   ["A", "AREA"].includes(this.tagName) && t.preventDefault(), !Te(this) && tt.getOrCreateInstance(this).show();
 });
 g.on(window, E4, () => {
-  for (const t of N.find(O4))
+  for (const t of x.find(O4))
     tt.getOrCreateInstance(t);
 });
 fe(tt);
@@ -4184,7 +4184,7 @@ class Yt extends pe {
 }
 jt(Yt);
 fe(Yt);
-const T0 = {
+const L0 = {
   __name: "Dropdown",
   props: {
     disabled: {
@@ -4222,12 +4222,12 @@ const T0 = {
       e.size ? `btn-${e.size}` : null
     ]);
     return (o, r) => (c(), h("div", {
-      class: x(n.value)
+      class: N(n.value)
     }, [
       y(o.$slots, "trigger", {}, () => [
         U(Le, {
           variant: t.variant,
-          class: x(s.value),
+          class: N(s.value),
           "data-bs-toggle": "dropdown",
           "aria-expanded": "false"
         }, ht({
@@ -4248,7 +4248,7 @@ const T0 = {
         ]), 1032, ["variant", "class"])
       ]),
       f("ul", {
-        class: x(i.value)
+        class: N(i.value)
       }, [
         y(o.$slots, "default")
       ], 2)
@@ -4260,7 +4260,7 @@ const T0 = {
 function Y4(t, e) {
   return c(), h("li", null, K4);
 }
-const V0 = /* @__PURE__ */ $(z4, [["render", Y4]]), O0 = {
+const S0 = /* @__PURE__ */ $(z4, [["render", Y4]]), T0 = {
   __name: "DropdownHeader",
   props: {
     tag: {
@@ -4277,7 +4277,7 @@ const V0 = /* @__PURE__ */ $(z4, [["render", Y4]]), O0 = {
     ]);
     return (n, i) => (c(), h("li", null, [
       (c(), k(ge(t.tag), {
-        class: x(e.value)
+        class: N(e.value)
       }, {
         default: I(() => [
           y(n.$slots, "default")
@@ -4286,7 +4286,7 @@ const V0 = /* @__PURE__ */ $(z4, [["render", Y4]]), O0 = {
       }, 8, ["class"]))
     ]));
   }
-}, N0 = {
+}, V0 = {
   __name: "DropdownItem",
   props: {
     active: {
@@ -4335,7 +4335,7 @@ const V0 = /* @__PURE__ */ $(z4, [["render", Y4]]), O0 = {
     ]);
     return (i, s) => (c(), h("li", null, [
       (c(), k(ge(t.is), {
-        class: x(n.value),
+        class: N(n.value),
         href: t.href,
         to: t.to,
         "aria-disabled": t.disabled ? "true" : "false",
@@ -4348,7 +4348,7 @@ const V0 = /* @__PURE__ */ $(z4, [["render", Y4]]), O0 = {
       }, 8, ["class", "href", "to", "aria-disabled", "target"]))
     ]));
   }
-}, x0 = {
+}, O0 = {
   __name: "DropdownItemForm",
   emits: ["submit"],
   setup(t, { emit: e }) {
@@ -4360,7 +4360,7 @@ const V0 = /* @__PURE__ */ $(z4, [["render", Y4]]), O0 = {
       y(s.$slots, "default")
     ], 32));
   }
-}, M0 = {
+}, N0 = {
   __name: "DropdownItemText",
   props: {
     class: {
@@ -4373,13 +4373,13 @@ const V0 = /* @__PURE__ */ $(z4, [["render", Y4]]), O0 = {
     ]);
     return (n, i) => (c(), h("li", null, [
       f("span", {
-        class: x(e.value)
+        class: N(e.value)
       }, [
         y(n.$slots, "default")
       ], 2)
     ]));
   }
-}, q4 = ["disabled", "name", "id", "novalidate"], D0 = {
+}, q4 = ["disabled", "name", "id", "novalidate"], x0 = {
   __name: "Form",
   props: {
     disabled: {
@@ -4408,7 +4408,7 @@ const V0 = /* @__PURE__ */ $(z4, [["render", Y4]]), O0 = {
       n("submit", r);
     }
     return (r, l) => (c(), h("form", {
-      class: x(s.value),
+      class: N(s.value),
       disabled: t.disabled,
       name: t.name,
       id: t.id,
@@ -4505,7 +4505,7 @@ const V0 = /* @__PURE__ */ $(z4, [["render", Y4]]), O0 = {
     ]);
     return (i, s) => (c(), k(ge(t.tag), {
       id: t.id,
-      class: x(n.value)
+      class: N(n.value)
     }, {
       default: I(() => [
         y(i.$slots, "prepend", {}, () => [
@@ -4623,7 +4623,7 @@ const V0 = /* @__PURE__ */ $(z4, [["render", Y4]]), O0 = {
     }
     return (l, a) => (c(), h("input", {
       value: t.modelValue,
-      class: x(s.value),
+      class: N(s.value),
       "aria-invalid": t.ariaInvalid,
       autocomplete: t.autocomplete,
       autofocus: t.autofocus,
@@ -4800,7 +4800,7 @@ const V0 = /* @__PURE__ */ $(z4, [["render", Y4]]), O0 = {
       _ = typeof i.modelValue == "number" ? parseInt(_) : _, n("update:modelValue", _);
     }
     return (d, m) => (c(), h("select", {
-      class: x(o.value),
+      class: N(o.value),
       value: r.value,
       "aria-invalid": t.ariaInvalid,
       id: t.id,
@@ -4870,7 +4870,7 @@ const V0 = /* @__PURE__ */ $(z4, [["render", Y4]]), O0 = {
             f("tr", null, [
               (c(!0), h(X, null, J(t.fields, (a) => (c(), h("th", {
                 key: a.key,
-                class: x(a.thClass),
+                class: N(a.thClass),
                 style: Re(a.thStyle)
               }, j(a.label), 7))), 128))
             ])
@@ -4879,7 +4879,7 @@ const V0 = /* @__PURE__ */ $(z4, [["render", Y4]]), O0 = {
             t.modelValue ? (c(), h("tr", ac, [
               (c(!0), h(X, null, J(t.fields, (a) => (c(), h("td", {
                 key: a.key,
-                class: x(a.tdClass),
+                class: N(a.tdClass),
                 style: Re(a.tdStyle)
               }, [
                 U(G1, {
@@ -4967,7 +4967,7 @@ const cs = /* @__PURE__ */ $(dc, [["render", Cc]]), _c = { class: "form-collecti
           f("thead", null, [
             f("tr", null, [
               (c(!0), h(X, null, J(t.fields, (m) => (c(), h("th", {
-                class: x(m.thClass),
+                class: N(m.thClass),
                 style: Re(m.thStyle)
               }, j(m.label), 7))), 256)),
               t.disabled ? B("", !0) : (c(), h("th", vc))
@@ -4976,7 +4976,7 @@ const cs = /* @__PURE__ */ $(dc, [["render", Cc]]), _c = { class: "form-collecti
           f("tbody", null, [
             (c(!0), h(X, null, J(s.value, (m, C) => (c(), h("tr", null, [
               (c(!0), h(X, null, J(t.fields, (_) => (c(), h("td", {
-                class: x(_.tdClass),
+                class: N(_.tdClass),
                 style: Re(_.tdStyle),
                 key: _.key
               }, [
@@ -5091,7 +5091,7 @@ const cs = /* @__PURE__ */ $(dc, [["render", Cc]]), _c = { class: "form-collecti
       `text-bg-${n.value.variant}`
     ]);
     return (s, o) => (c(), h("div", {
-      class: x(i.value)
+      class: N(i.value)
     }, j(n.value ? n.value.label : t.modelValue), 3));
   }
 }, G1 = {
@@ -5272,7 +5272,7 @@ const cs = /* @__PURE__ */ $(dc, [["render", Cc]]), _c = { class: "form-collecti
       ]))
     ]));
   }
-}, Oc = ["disabled", "aria-invalid", "id", "name"], I0 = {
+}, Oc = ["disabled", "aria-invalid", "id", "name"], M0 = {
   __name: "FormCheckboxGroup",
   props: {
     ariaInvalid: {
@@ -5390,7 +5390,7 @@ const cs = /* @__PURE__ */ $(dc, [["render", Cc]]), _c = { class: "form-collecti
       }, 1032, ["modelValue", "autofocus", "button", "button-variant", "disabled", "form", "id", "name", "required", "size", "stacked", "state", "value"]))), 128))
     ], 8, Oc));
   }
-}, Nc = ["for", "textContent"], xc = ["for", "textContent"], Mc = ["textContent"], k0 = {
+}, Nc = ["for", "textContent"], xc = ["for", "textContent"], Mc = ["textContent"], D0 = {
   __name: "FormGroup",
   props: {
     label: {
@@ -5430,7 +5430,7 @@ const cs = /* @__PURE__ */ $(dc, [["render", Cc]]), _c = { class: "form-collecti
       e.floating ? "form-floating" : "form-group"
     ]);
     return (i, s) => (c(), h("div", {
-      class: x(n.value)
+      class: N(n.value)
     }, [
       t.label && !t.floating ? (c(), h("label", {
         key: 0,
@@ -5553,11 +5553,11 @@ const cs = /* @__PURE__ */ $(dc, [["render", Cc]]), _c = { class: "form-collecti
       n("change", m);
     }
     return (d, m) => (c(), h("div", {
-      class: x(o.value)
+      class: N(o.value)
     }, [
       si(f("input", {
         "onUpdate:modelValue": m[0] || (m[0] = (C) => s.value = C),
-        class: x(r.value),
+        class: N(r.value),
         "aria-label": t.ariaLabel,
         "aria-labelledby": t.ariaLabelledby,
         autofocus: t.autofocus,
@@ -5574,14 +5574,14 @@ const cs = /* @__PURE__ */ $(dc, [["render", Cc]]), _c = { class: "form-collecti
         [ys, s.value]
       ]),
       f("label", {
-        class: x(l.value),
+        class: N(l.value),
         for: t.id
       }, [
         y(d.$slots, "default")
       ], 10, Ic)
     ], 2));
   }
-}, Hc = ["disabled", "aria-invalid", "id", "name"], H0 = {
+}, Hc = ["disabled", "aria-invalid", "id", "name"], I0 = {
   __name: "FormRadioGroup",
   props: {
     ariaInvalid: {
@@ -5698,7 +5698,7 @@ const cs = /* @__PURE__ */ $(dc, [["render", Cc]]), _c = { class: "form-collecti
       }, 1032, ["modelValue", "autofocus", "button", "button-variant", "disabled", "form", "id", "name", "required", "size", "stacked", "state", "value"]))), 128))
     ], 8, Hc));
   }
-}, Bc = ["aria-invalid", "autofocus", "disabled", "form", "id", "max", "min", "name", "readonly", "required", "step"], B0 = {
+}, Bc = ["aria-invalid", "autofocus", "disabled", "form", "id", "max", "min", "name", "readonly", "required", "step"], k0 = {
   __name: "FormRange",
   props: {
     ariaInvalid: {
@@ -5769,7 +5769,7 @@ const cs = /* @__PURE__ */ $(dc, [["render", Cc]]), _c = { class: "form-collecti
     }
     return (a, u) => si((c(), h("input", {
       "onUpdate:modelValue": u[0] || (u[0] = (d) => s.value = d),
-      class: x(o.value),
+      class: N(o.value),
       "aria-invalid": t.ariaInvalid,
       autofocus: t.autofocus,
       disabled: t.disabled,
@@ -5794,7 +5794,7 @@ function Fc(t, e) {
     y(t.$slots, "default")
   ]);
 }
-const R0 = /* @__PURE__ */ $(Rc, [["render", Fc]]), Zc = ["value", "aria-invalid", "autocomplete", "autofocus", "disabled", "form", "href", "id", "max-rows", "name", "placeholder", "readonly", "required", "rows", "wrap"], P0 = {
+const H0 = /* @__PURE__ */ $(Rc, [["render", Fc]]), Zc = ["value", "aria-invalid", "autocomplete", "autofocus", "disabled", "form", "href", "id", "max-rows", "name", "placeholder", "readonly", "required", "rows", "wrap"], B0 = {
   __name: "FormTextarea",
   props: {
     ariaInvalid: {
@@ -5875,7 +5875,7 @@ const R0 = /* @__PURE__ */ $(Rc, [["render", Fc]]), Zc = ["value", "aria-invalid
     }
     return (l, a) => (c(), h("textarea", {
       value: t.modelValue,
-      class: x(s.value),
+      class: N(s.value),
       "aria-invalid": t.ariaInvalid,
       autocomplete: t.autocomplete,
       autofocus: t.autofocus,
@@ -5911,7 +5911,7 @@ const R0 = /* @__PURE__ */ $(Rc, [["render", Fc]]), Zc = ["value", "aria-invalid
 function Yc(t, e) {
   return c(), h("svg", zc, Kc);
 }
-const F0 = /* @__PURE__ */ $(jc, [["render", Yc]]), qc = {}, Uc = {
+const R0 = /* @__PURE__ */ $(jc, [["render", Yc]]), qc = {}, Uc = {
   xmlns: "http://www.w3.org/2000/svg",
   width: "24",
   height: "24",
@@ -5928,7 +5928,7 @@ const F0 = /* @__PURE__ */ $(jc, [["render", Yc]]), qc = {}, Uc = {
 function Xc(t, e) {
   return c(), h("svg", Uc, Qc);
 }
-const Z0 = /* @__PURE__ */ $(qc, [["render", Xc]]), Jc = {}, e3 = {
+const P0 = /* @__PURE__ */ $(qc, [["render", Xc]]), Jc = {}, e3 = {
   xmlns: "http://www.w3.org/2000/svg",
   width: "24",
   height: "24",
@@ -5962,7 +5962,7 @@ const s3 = /* @__PURE__ */ $(Jc, [["render", i3]]), o3 = {}, r3 = {
 function c3(t, e) {
   return c(), h("svg", r3, a3);
 }
-const j0 = /* @__PURE__ */ $(o3, [["render", c3]]), d3 = {}, u3 = {
+const F0 = /* @__PURE__ */ $(o3, [["render", c3]]), d3 = {}, u3 = {
   xmlns: "http://www.w3.org/2000/svg",
   width: "24",
   height: "24",
@@ -5979,7 +5979,7 @@ const j0 = /* @__PURE__ */ $(o3, [["render", c3]]), d3 = {}, u3 = {
 function p3(t, e) {
   return c(), h("svg", u3, h3);
 }
-const z0 = /* @__PURE__ */ $(d3, [["render", p3]]), C3 = {}, _3 = {
+const Z0 = /* @__PURE__ */ $(d3, [["render", p3]]), C3 = {}, _3 = {
   xmlns: "http://www.w3.org/2000/svg",
   width: "24",
   height: "24",
@@ -5996,7 +5996,7 @@ const z0 = /* @__PURE__ */ $(d3, [["render", p3]]), C3 = {}, _3 = {
 function v3(t, e) {
   return c(), h("svg", _3, g3);
 }
-const W0 = /* @__PURE__ */ $(C3, [["render", v3]]), b3 = {}, y3 = {
+const j0 = /* @__PURE__ */ $(C3, [["render", v3]]), b3 = {}, y3 = {
   xmlns: "http://www.w3.org/2000/svg",
   width: "24",
   height: "24",
@@ -6015,7 +6015,7 @@ const W0 = /* @__PURE__ */ $(C3, [["render", v3]]), b3 = {}, y3 = {
 function A3(t, e) {
   return c(), h("svg", y3, $3);
 }
-const K0 = /* @__PURE__ */ $(b3, [["render", A3]]), L3 = {}, S3 = {
+const z0 = /* @__PURE__ */ $(b3, [["render", A3]]), L3 = {}, S3 = {
   xmlns: "http://www.w3.org/2000/svg",
   width: "24",
   height: "25",
@@ -6034,7 +6034,7 @@ const K0 = /* @__PURE__ */ $(b3, [["render", A3]]), L3 = {}, S3 = {
 function N3(t, e) {
   return c(), h("svg", S3, O3);
 }
-const Y0 = /* @__PURE__ */ $(L3, [["render", N3]]), x3 = {}, M3 = {
+const W0 = /* @__PURE__ */ $(L3, [["render", N3]]), x3 = {}, M3 = {
   xmlns: "http://www.w3.org/2000/svg",
   width: "24",
   height: "25",
@@ -6053,7 +6053,7 @@ const Y0 = /* @__PURE__ */ $(L3, [["render", N3]]), x3 = {}, M3 = {
 function H3(t, e) {
   return c(), h("svg", M3, k3);
 }
-const q0 = /* @__PURE__ */ $(x3, [["render", H3]]), B3 = {}, R3 = {
+const K0 = /* @__PURE__ */ $(x3, [["render", H3]]), B3 = {}, R3 = {
   xmlns: "http://www.w3.org/2000/svg",
   width: "18",
   height: "18",
@@ -6092,7 +6092,7 @@ const z3 = /* @__PURE__ */ $(B3, [["render", j3]]), W3 = {}, K3 = {
 function G3(t, e) {
   return c(), h("svg", K3, U3);
 }
-const U0 = /* @__PURE__ */ $(W3, [["render", G3]]), Q3 = {}, X3 = {
+const Y0 = /* @__PURE__ */ $(W3, [["render", G3]]), Q3 = {}, X3 = {
   xmlns: "http://www.w3.org/2000/svg",
   width: "20",
   height: "22",
@@ -6104,7 +6104,7 @@ const U0 = /* @__PURE__ */ $(W3, [["render", G3]]), Q3 = {}, X3 = {
 function t7(t, e) {
   return c(), h("svg", X3, e7);
 }
-const G0 = /* @__PURE__ */ $(Q3, [["render", t7]]), n7 = {}, i7 = {
+const q0 = /* @__PURE__ */ $(Q3, [["render", t7]]), n7 = {}, i7 = {
   xmlns: "http://www.w3.org/2000/svg",
   width: "24",
   height: "24",
@@ -6121,7 +6121,7 @@ const G0 = /* @__PURE__ */ $(Q3, [["render", t7]]), n7 = {}, i7 = {
 function r7(t, e) {
   return c(), h("svg", i7, o7);
 }
-const Q0 = /* @__PURE__ */ $(n7, [["render", r7]]), l7 = {}, a7 = {
+const U0 = /* @__PURE__ */ $(n7, [["render", r7]]), l7 = {}, a7 = {
   xmlns: "http://www.w3.org/2000/svg",
   width: "24",
   height: "24",
@@ -6150,7 +6150,7 @@ const Q0 = /* @__PURE__ */ $(n7, [["render", r7]]), l7 = {}, a7 = {
 function h7(t, e) {
   return c(), h("svg", a7, f7);
 }
-const X0 = /* @__PURE__ */ $(l7, [["render", h7]]), p7 = {}, C7 = {
+const G0 = /* @__PURE__ */ $(l7, [["render", h7]]), p7 = {}, C7 = {
   xmlns: "http://www.w3.org/2000/svg",
   width: "24",
   height: "24",
@@ -6173,7 +6173,7 @@ const X0 = /* @__PURE__ */ $(l7, [["render", h7]]), p7 = {}, C7 = {
 function v7(t, e) {
   return c(), h("svg", C7, g7);
 }
-const J0 = /* @__PURE__ */ $(p7, [["render", v7]]), b7 = {}, y7 = {
+const Q0 = /* @__PURE__ */ $(p7, [["render", v7]]), b7 = {}, y7 = {
   xmlns: "http://www.w3.org/2000/svg",
   width: "24",
   height: "24",
@@ -6185,7 +6185,7 @@ const J0 = /* @__PURE__ */ $(p7, [["render", v7]]), b7 = {}, y7 = {
 function $7(t, e) {
   return c(), h("svg", y7, w7);
 }
-const e6 = /* @__PURE__ */ $(b7, [["render", $7]]), A7 = {}, L7 = {
+const X0 = /* @__PURE__ */ $(b7, [["render", $7]]), A7 = {}, L7 = {
   xmlns: "http://www.w3.org/2000/svg",
   width: "24",
   height: "24",
@@ -6208,7 +6208,7 @@ const e6 = /* @__PURE__ */ $(b7, [["render", $7]]), A7 = {}, L7 = {
 function O7(t, e) {
   return c(), h("svg", L7, V7);
 }
-const t6 = /* @__PURE__ */ $(A7, [["render", O7]]), N7 = {}, x7 = {
+const J0 = /* @__PURE__ */ $(A7, [["render", O7]]), N7 = {}, x7 = {
   xmlns: "http://www.w3.org/2000/svg",
   width: "24",
   height: "24",
@@ -6231,7 +6231,7 @@ const t6 = /* @__PURE__ */ $(A7, [["render", O7]]), N7 = {}, x7 = {
 function k7(t, e) {
   return c(), h("svg", x7, I7);
 }
-const n6 = /* @__PURE__ */ $(N7, [["render", k7]]), H7 = {}, B7 = {
+const e6 = /* @__PURE__ */ $(N7, [["render", k7]]), H7 = {}, B7 = {
   xmlns: "http://www.w3.org/2000/svg",
   width: "24",
   height: "24",
@@ -6260,7 +6260,7 @@ const n6 = /* @__PURE__ */ $(N7, [["render", k7]]), H7 = {}, B7 = {
 function j7(t, e) {
   return c(), h("svg", B7, Z7);
 }
-const i6 = /* @__PURE__ */ $(H7, [["render", j7]]), z7 = {}, W7 = {
+const t6 = /* @__PURE__ */ $(H7, [["render", j7]]), z7 = {}, W7 = {
   xmlns: "http://www.w3.org/2000/svg",
   width: "24",
   height: "24",
@@ -6295,7 +6295,7 @@ const i6 = /* @__PURE__ */ $(H7, [["render", j7]]), z7 = {}, W7 = {
 function Q7(t, e) {
   return c(), h("svg", W7, G7);
 }
-const s6 = /* @__PURE__ */ $(z7, [["render", Q7]]), X7 = {}, J7 = {
+const n6 = /* @__PURE__ */ $(z7, [["render", Q7]]), X7 = {}, J7 = {
   xmlns: "http://www.w3.org/2000/svg",
   width: "24",
   height: "24",
@@ -6318,7 +6318,7 @@ const s6 = /* @__PURE__ */ $(z7, [["render", Q7]]), X7 = {}, J7 = {
 function i5(t, e) {
   return c(), h("svg", J7, n5);
 }
-const o6 = /* @__PURE__ */ $(X7, [["render", i5]]), s5 = {}, o5 = {
+const i6 = /* @__PURE__ */ $(X7, [["render", i5]]), s5 = {}, o5 = {
   xmlns: "http://www.w3.org/2000/svg",
   width: "24",
   height: "24",
@@ -6347,7 +6347,7 @@ const o6 = /* @__PURE__ */ $(X7, [["render", i5]]), s5 = {}, o5 = {
 function d5(t, e) {
   return c(), h("svg", o5, c5);
 }
-const r6 = /* @__PURE__ */ $(s5, [["render", d5]]), u5 = {}, f5 = {
+const s6 = /* @__PURE__ */ $(s5, [["render", d5]]), u5 = {}, f5 = {
   xmlns: "http://www.w3.org/2000/svg",
   width: "24",
   height: "24",
@@ -6382,7 +6382,7 @@ const r6 = /* @__PURE__ */ $(s5, [["render", d5]]), u5 = {}, f5 = {
 function g5(t, e) {
   return c(), h("svg", f5, m5);
 }
-const l6 = /* @__PURE__ */ $(u5, [["render", g5]]), v5 = {}, b5 = {
+const o6 = /* @__PURE__ */ $(u5, [["render", g5]]), v5 = {}, b5 = {
   xmlns: "http://www.w3.org/2000/svg",
   width: "24",
   height: "24",
@@ -6405,7 +6405,7 @@ const l6 = /* @__PURE__ */ $(u5, [["render", g5]]), v5 = {}, b5 = {
 function $5(t, e) {
   return c(), h("svg", b5, w5);
 }
-const a6 = /* @__PURE__ */ $(v5, [["render", $5]]), A5 = {}, L5 = {
+const r6 = /* @__PURE__ */ $(v5, [["render", $5]]), A5 = {}, L5 = {
   xmlns: "http://www.w3.org/2000/svg",
   width: "24",
   height: "24",
@@ -6428,7 +6428,7 @@ const a6 = /* @__PURE__ */ $(v5, [["render", $5]]), A5 = {}, L5 = {
 function O5(t, e) {
   return c(), h("svg", L5, V5);
 }
-const c6 = /* @__PURE__ */ $(A5, [["render", O5]]), N5 = {}, x5 = {
+const l6 = /* @__PURE__ */ $(A5, [["render", O5]]), N5 = {}, x5 = {
   width: "24",
   height: "24",
   viewBox: "0 0 24 24",
@@ -6451,7 +6451,7 @@ const c6 = /* @__PURE__ */ $(A5, [["render", O5]]), N5 = {}, x5 = {
 function H5(t, e) {
   return c(), h("svg", x5, k5);
 }
-const d6 = /* @__PURE__ */ $(N5, [["render", H5]]), B5 = {}, R5 = {
+const a6 = /* @__PURE__ */ $(N5, [["render", H5]]), B5 = {}, R5 = {
   xmlns: "http://www.w3.org/2000/svg",
   width: "25",
   height: "24",
@@ -6480,7 +6480,7 @@ const d6 = /* @__PURE__ */ $(N5, [["render", H5]]), B5 = {}, R5 = {
 function z5(t, e) {
   return c(), h("svg", R5, j5);
 }
-const u6 = /* @__PURE__ */ $(B5, [["render", z5]]), W5 = {}, K5 = {
+const c6 = /* @__PURE__ */ $(B5, [["render", z5]]), W5 = {}, K5 = {
   xmlns: "http://www.w3.org/2000/svg",
   width: "24",
   height: "24",
@@ -6497,7 +6497,7 @@ const u6 = /* @__PURE__ */ $(B5, [["render", z5]]), W5 = {}, K5 = {
 function U5(t, e) {
   return c(), h("svg", K5, q5);
 }
-const f6 = /* @__PURE__ */ $(W5, [["render", U5]]), G5 = {}, Q5 = {
+const d6 = /* @__PURE__ */ $(W5, [["render", U5]]), G5 = {}, Q5 = {
   xmlns: "http://www.w3.org/2000/svg",
   width: "24",
   height: "24",
@@ -6509,7 +6509,7 @@ const f6 = /* @__PURE__ */ $(W5, [["render", U5]]), G5 = {}, Q5 = {
 function e9(t, e) {
   return c(), h("svg", Q5, J5);
 }
-const h6 = /* @__PURE__ */ $(G5, [["render", e9]]), t9 = {}, n9 = {
+const u6 = /* @__PURE__ */ $(G5, [["render", e9]]), t9 = {}, n9 = {
   xmlns: "http://www.w3.org/2000/svg",
   width: "24",
   height: "24",
@@ -6526,7 +6526,7 @@ const h6 = /* @__PURE__ */ $(G5, [["render", e9]]), t9 = {}, n9 = {
 function o9(t, e) {
   return c(), h("svg", n9, s9);
 }
-const p6 = /* @__PURE__ */ $(t9, [["render", o9]]), r9 = {}, l9 = {
+const f6 = /* @__PURE__ */ $(t9, [["render", o9]]), r9 = {}, l9 = {
   width: "25",
   height: "25",
   viewBox: "0 0 25 25",
@@ -6551,7 +6551,7 @@ const p6 = /* @__PURE__ */ $(t9, [["render", o9]]), r9 = {}, l9 = {
 function u9(t, e) {
   return c(), h("svg", l9, d9);
 }
-const C6 = /* @__PURE__ */ $(r9, [["render", u9]]), f9 = {}, h9 = {
+const h6 = /* @__PURE__ */ $(r9, [["render", u9]]), f9 = {}, h9 = {
   xmlns: "http://www.w3.org/2000/svg",
   width: "24",
   height: "24",
@@ -6574,7 +6574,7 @@ const C6 = /* @__PURE__ */ $(r9, [["render", u9]]), f9 = {}, h9 = {
 function m9(t, e) {
   return c(), h("svg", h9, _9);
 }
-const _6 = /* @__PURE__ */ $(f9, [["render", m9]]), g9 = {}, v9 = {
+const p6 = /* @__PURE__ */ $(f9, [["render", m9]]), g9 = {}, v9 = {
   width: "24",
   height: "24",
   viewBox: "0 0 24 24",
@@ -6597,7 +6597,7 @@ const _6 = /* @__PURE__ */ $(f9, [["render", m9]]), g9 = {}, v9 = {
 function $9(t, e) {
   return c(), h("svg", v9, w9);
 }
-const m6 = /* @__PURE__ */ $(g9, [["render", $9]]), A9 = {}, L9 = {
+const C6 = /* @__PURE__ */ $(g9, [["render", $9]]), A9 = {}, L9 = {
   width: "20",
   height: "20",
   viewBox: "0 0 20 20",
@@ -6632,7 +6632,7 @@ const m6 = /* @__PURE__ */ $(g9, [["render", $9]]), A9 = {}, L9 = {
 function x9(t, e) {
   return c(), h("svg", L9, N9);
 }
-const g6 = /* @__PURE__ */ $(A9, [["render", x9]]), M9 = {}, D9 = {
+const _6 = /* @__PURE__ */ $(A9, [["render", x9]]), M9 = {}, D9 = {
   width: "20",
   height: "20",
   viewBox: "0 0 20 20",
@@ -6644,7 +6644,7 @@ const g6 = /* @__PURE__ */ $(A9, [["render", x9]]), M9 = {}, D9 = {
 function H9(t, e) {
   return c(), h("svg", D9, k9);
 }
-const v6 = /* @__PURE__ */ $(M9, [["render", H9]]), B9 = {}, R9 = {
+const m6 = /* @__PURE__ */ $(M9, [["render", H9]]), B9 = {}, R9 = {
   xmlns: "http://www.w3.org/2000/svg",
   width: "24",
   height: "24",
@@ -6661,7 +6661,7 @@ const v6 = /* @__PURE__ */ $(M9, [["render", H9]]), B9 = {}, R9 = {
 function Z9(t, e) {
   return c(), h("svg", R9, F9);
 }
-const b6 = /* @__PURE__ */ $(B9, [["render", Z9]]), j9 = {}, z9 = {
+const g6 = /* @__PURE__ */ $(B9, [["render", Z9]]), j9 = {}, z9 = {
   xmlns: "http://www.w3.org/2000/svg",
   width: "24",
   height: "24",
@@ -6682,7 +6682,7 @@ const b6 = /* @__PURE__ */ $(B9, [["render", Z9]]), j9 = {}, z9 = {
 function q9(t, e) {
   return c(), h("svg", z9, Y9);
 }
-const y6 = /* @__PURE__ */ $(j9, [["render", q9]]), U9 = {}, G9 = {
+const v6 = /* @__PURE__ */ $(j9, [["render", q9]]), U9 = {}, G9 = {
   width: "20",
   height: "20",
   viewBox: "0 0 20 20",
@@ -6709,7 +6709,7 @@ const y6 = /* @__PURE__ */ $(j9, [["render", q9]]), U9 = {}, G9 = {
 function J9(t, e) {
   return c(), h("svg", G9, X9);
 }
-const E6 = /* @__PURE__ */ $(U9, [["render", J9]]), ed = {}, td = {
+const b6 = /* @__PURE__ */ $(U9, [["render", J9]]), ed = {}, td = {
   xmlns: "http://www.w3.org/2000/svg",
   width: "24",
   height: "24",
@@ -6732,7 +6732,7 @@ const E6 = /* @__PURE__ */ $(U9, [["render", J9]]), ed = {}, td = {
 function od(t, e) {
   return c(), h("svg", td, sd);
 }
-const w6 = /* @__PURE__ */ $(ed, [["render", od]]), rd = {}, ld = {
+const y6 = /* @__PURE__ */ $(ed, [["render", od]]), rd = {}, ld = {
   width: "24",
   height: "24",
   viewBox: "0 0 201 200",
@@ -6759,7 +6759,7 @@ const w6 = /* @__PURE__ */ $(ed, [["render", od]]), rd = {}, ld = {
 function hd(t, e) {
   return c(), h("svg", ld, fd);
 }
-const $6 = /* @__PURE__ */ $(rd, [["render", hd]]), pd = {}, Cd = {
+const E6 = /* @__PURE__ */ $(rd, [["render", hd]]), pd = {}, Cd = {
   width: "28",
   height: "28",
   viewBox: "0 0 28 28",
@@ -6778,7 +6778,7 @@ const $6 = /* @__PURE__ */ $(rd, [["render", hd]]), pd = {}, Cd = {
 function vd(t, e) {
   return c(), h("svg", Cd, gd);
 }
-const A6 = /* @__PURE__ */ $(pd, [["render", vd]]), bd = {}, yd = {
+const w6 = /* @__PURE__ */ $(pd, [["render", vd]]), bd = {}, yd = {
   xmlns: "http://www.w3.org/2000/svg",
   width: "24",
   height: "24",
@@ -6795,7 +6795,7 @@ const A6 = /* @__PURE__ */ $(pd, [["render", vd]]), bd = {}, yd = {
 function $d(t, e) {
   return c(), h("svg", yd, wd);
 }
-const L6 = /* @__PURE__ */ $(bd, [["render", $d]]), Ad = {}, Ld = {
+const $6 = /* @__PURE__ */ $(bd, [["render", $d]]), Ad = {}, Ld = {
   xmlns: "http://www.w3.org/2000/svg",
   width: "24",
   height: "24",
@@ -6824,7 +6824,7 @@ const L6 = /* @__PURE__ */ $(bd, [["render", $d]]), Ad = {}, Ld = {
 function Nd(t, e) {
   return c(), h("svg", Ld, Od);
 }
-const S6 = /* @__PURE__ */ $(Ad, [["render", Nd]]), xd = {}, Md = {
+const A6 = /* @__PURE__ */ $(Ad, [["render", Nd]]), xd = {}, Md = {
   width: "24",
   height: "24",
   viewBox: "0 0 24 24",
@@ -6839,7 +6839,7 @@ const S6 = /* @__PURE__ */ $(Ad, [["render", Nd]]), xd = {}, Md = {
 function kd(t, e) {
   return c(), h("svg", Md, Id);
 }
-const T6 = /* @__PURE__ */ $(xd, [["render", kd]]), Hd = {}, Bd = {
+const L6 = /* @__PURE__ */ $(xd, [["render", kd]]), Hd = {}, Bd = {
   xmlns: "http://www.w3.org/2000/svg",
   width: "24",
   height: "24",
@@ -6862,7 +6862,7 @@ const T6 = /* @__PURE__ */ $(xd, [["render", kd]]), Hd = {}, Bd = {
 function Zd(t, e) {
   return c(), h("svg", Bd, Fd);
 }
-const V6 = /* @__PURE__ */ $(Hd, [["render", Zd]]), jd = {}, zd = {
+const S6 = /* @__PURE__ */ $(Hd, [["render", Zd]]), jd = {}, zd = {
   xmlns: "http://www.w3.org/2000/svg",
   width: "24",
   height: "24",
@@ -6881,7 +6881,7 @@ const V6 = /* @__PURE__ */ $(Hd, [["render", Zd]]), jd = {}, zd = {
 function qd(t, e) {
   return c(), h("svg", zd, Yd);
 }
-const O6 = /* @__PURE__ */ $(jd, [["render", qd]]), Ud = {}, Gd = {
+const T6 = /* @__PURE__ */ $(jd, [["render", qd]]), Ud = {}, Gd = {
   xmlns: "http://www.w3.org/2000/svg",
   width: "24",
   height: "24",
@@ -6910,7 +6910,7 @@ const O6 = /* @__PURE__ */ $(jd, [["render", qd]]), Ud = {}, Gd = {
 function tu(t, e) {
   return c(), h("svg", Gd, eu);
 }
-const N6 = /* @__PURE__ */ $(Ud, [["render", tu]]), nu = {}, iu = {
+const V6 = /* @__PURE__ */ $(Ud, [["render", tu]]), nu = {}, iu = {
   xmlns: "http://www.w3.org/2000/svg",
   width: "24",
   height: "24",
@@ -6933,7 +6933,7 @@ const N6 = /* @__PURE__ */ $(Ud, [["render", tu]]), nu = {}, iu = {
 function lu(t, e) {
   return c(), h("svg", iu, ru);
 }
-const x6 = /* @__PURE__ */ $(nu, [["render", lu]]), au = {}, cu = {
+const O6 = /* @__PURE__ */ $(nu, [["render", lu]]), au = {}, cu = {
   xmlns: "http://www.w3.org/2000/svg",
   width: "24",
   height: "24",
@@ -6962,7 +6962,7 @@ const x6 = /* @__PURE__ */ $(nu, [["render", lu]]), au = {}, cu = {
 function pu(t, e) {
   return c(), h("svg", cu, hu);
 }
-const M6 = /* @__PURE__ */ $(au, [["render", pu]]), Cu = {}, _u = {
+const N6 = /* @__PURE__ */ $(au, [["render", pu]]), Cu = {}, _u = {
   xmlns: "http://www.w3.org/2000/svg",
   width: "24",
   height: "24",
@@ -6985,7 +6985,7 @@ const M6 = /* @__PURE__ */ $(au, [["render", pu]]), Cu = {}, _u = {
 function bu(t, e) {
   return c(), h("svg", _u, vu);
 }
-const D6 = /* @__PURE__ */ $(Cu, [["render", bu]]), yu = {}, Eu = {
+const x6 = /* @__PURE__ */ $(Cu, [["render", bu]]), yu = {}, Eu = {
   xmlns: "http://www.w3.org/2000/svg",
   width: "24",
   height: "24",
@@ -7010,7 +7010,7 @@ const D6 = /* @__PURE__ */ $(Cu, [["render", bu]]), yu = {}, Eu = {
 function Su(t, e) {
   return c(), h("svg", Eu, Lu);
 }
-const I6 = /* @__PURE__ */ $(yu, [["render", Su]]), Tu = {}, Vu = {
+const M6 = /* @__PURE__ */ $(yu, [["render", Su]]), Tu = {}, Vu = {
   xmlns: "http://www.w3.org/2000/svg",
   width: "24",
   height: "24",
@@ -7033,7 +7033,7 @@ const I6 = /* @__PURE__ */ $(yu, [["render", Su]]), Tu = {}, Vu = {
 function Mu(t, e) {
   return c(), h("svg", Vu, xu);
 }
-const k6 = /* @__PURE__ */ $(Tu, [["render", Mu]]), Du = {}, Iu = {
+const D6 = /* @__PURE__ */ $(Tu, [["render", Mu]]), Du = {}, Iu = {
   xmlns: "http://www.w3.org/2000/svg",
   width: "24",
   height: "24",
@@ -7068,7 +7068,7 @@ const k6 = /* @__PURE__ */ $(Tu, [["render", Mu]]), Du = {}, Iu = {
 function Fu(t, e) {
   return c(), h("svg", Iu, Pu);
 }
-const H6 = /* @__PURE__ */ $(Du, [["render", Fu]]), Zu = {}, ju = { id: "app-header" }, zu = { class: "app-header-logo" }, Wu = { class: "app-header-actions-wrapper" };
+const I6 = /* @__PURE__ */ $(Du, [["render", Fu]]), Zu = {}, ju = { id: "app-header" }, zu = { class: "app-header-logo" }, Wu = { class: "app-header-actions-wrapper" };
 function Ku(t, e) {
   return c(), h("div", ju, [
     f("header", zu, [
@@ -7079,7 +7079,7 @@ function Ku(t, e) {
     ])
   ]);
 }
-const B6 = /* @__PURE__ */ $(Zu, [["render", Ku]]), Yu = {}, qu = {
+const k6 = /* @__PURE__ */ $(Zu, [["render", Ku]]), Yu = {}, qu = {
   width: "173",
   height: "31",
   viewBox: "0 0 173 31",
@@ -7091,7 +7091,7 @@ const B6 = /* @__PURE__ */ $(Zu, [["render", Ku]]), Yu = {}, qu = {
 function Qu(t, e) {
   return c(), h("svg", qu, Gu);
 }
-const R6 = /* @__PURE__ */ $(Yu, [["render", Qu]]);
+const H6 = /* @__PURE__ */ $(Yu, [["render", Qu]]);
 var he = typeof globalThis < "u" ? globalThis : typeof window < "u" ? window : typeof global < "u" ? global : typeof self < "u" ? self : {};
 function Xu(t) {
   return t && t.__esModule && Object.prototype.hasOwnProperty.call(t, "default") ? t.default : t;
@@ -7998,7 +7998,7 @@ function s0() {
   });
 })(ds);
 var o0 = ds.exports;
-const r0 = /* @__PURE__ */ Xu(o0), l0 = ["id", "aria-labelledby"], a0 = ["id"], P6 = {
+const r0 = /* @__PURE__ */ Xu(o0), l0 = ["id", "aria-labelledby"], a0 = ["id"], B6 = {
   __name: "Modal",
   props: {
     bodyClass: {
@@ -8173,7 +8173,7 @@ const r0 = /* @__PURE__ */ Xu(o0), l0 = ["id", "aria-labelledby"], a0 = ["id"], 
       y(S.$slots, "trigger", {}, () => [
         U(Le, {
           variant: t.triggerVariant,
-          class: x(t.triggerClass),
+          class: N(t.triggerClass),
           size: t.triggerSize,
           disabled: t.triggerDisabled,
           onClick: H[0] || (H[0] = (P) => A())
@@ -8195,26 +8195,26 @@ const r0 = /* @__PURE__ */ Xu(o0), l0 = ["id", "aria-labelledby"], a0 = ["id"], 
       f("div", {
         ref_key: "modalEl",
         ref: n,
-        class: x(C.value),
+        class: N(C.value),
         id: t.id,
         tabindex: "-1",
         "aria-labelledby": `${t.id}-label`,
         "aria-hidden": "true"
       }, [
         f("div", {
-          class: x(u.value)
+          class: N(u.value)
         }, [
           f("div", {
-            class: x(a.value)
+            class: N(a.value)
           }, [
             t.hideHeader ? B("", !0) : (c(), h("div", {
               key: 0,
-              class: x(m.value)
+              class: N(m.value)
             }, [
               y(S.$slots, "modal-header", {}, () => [
                 y(S.$slots, "modal-title", {}, () => [
                   f("span", {
-                    class: x(_.value),
+                    class: N(_.value),
                     id: `${t.id}-label`
                   }, j(t.title), 11, a0)
                 ]),
@@ -8229,18 +8229,18 @@ const r0 = /* @__PURE__ */ Xu(o0), l0 = ["id", "aria-labelledby"], a0 = ["id"], 
               ])
             ], 2)),
             f("div", {
-              class: x(r.value)
+              class: N(r.value)
             }, [
               y(S.$slots, "default")
             ], 2),
             t.hideFooter ? B("", !0) : (c(), h("div", {
               key: 1,
-              class: x(d.value)
+              class: N(d.value)
             }, [
               y(S.$slots, "modal-footer", {}, () => [
                 U(Le, {
                   type: "button",
-                  class: x(l.value),
+                  class: N(l.value),
                   disabled: t.cancelDisabled,
                   onClick: H[2] || (H[2] = (P) => T())
                 }, {
@@ -8268,7 +8268,7 @@ const r0 = /* @__PURE__ */ Xu(o0), l0 = ["id", "aria-labelledby"], a0 = ["id"], 
       ], 10, l0)
     ], 64));
   }
-}, F6 = {
+}, R6 = {
   __name: "Nav",
   props: {
     anchor: {
@@ -8310,7 +8310,7 @@ const r0 = /* @__PURE__ */ Xu(o0), l0 = ["id", "aria-labelledby"], a0 = ["id"], 
       e.anchor ? "nav-anchor" : null
     ]);
     return (i, s) => (c(), k(ge(t.tag), {
-      class: x(n.value),
+      class: N(n.value),
       role: "navigation"
     }, {
       default: I(() => [
@@ -8348,7 +8348,7 @@ const r0 = /* @__PURE__ */ Xu(o0), l0 = ["id", "aria-labelledby"], a0 = ["id"], 
       e.external ? "external-link" : null
     ]), i = L(() => e.external ? "noopener noreferrer" : null), s = L(() => e.external ? "_blank" : null);
     return (o, r) => (c(), k(ge(t.is), {
-      class: x(n.value),
+      class: N(n.value),
       disabled: t.disabled,
       to: t.to,
       href: t.href,
@@ -8366,7 +8366,7 @@ const r0 = /* @__PURE__ */ Xu(o0), l0 = ["id", "aria-labelledby"], a0 = ["id"], 
       _: 3
     }, 8, ["class", "disabled", "to", "href", "external", "rel", "target"]));
   }
-}, Z6 = {
+}, P6 = {
   __name: "NavItem",
   props: {
     active: {
@@ -8411,7 +8411,7 @@ const r0 = /* @__PURE__ */ Xu(o0), l0 = ["id", "aria-labelledby"], a0 = ["id"], 
       e.neverActive ? "never-active" : null
     ]);
     return (i, s) => (c(), h("li", {
-      class: x(n.value)
+      class: N(n.value)
     }, [
       t.to || t.href ? (c(), k(c0, {
         key: 0,
@@ -8441,13 +8441,13 @@ const r0 = /* @__PURE__ */ Xu(o0), l0 = ["id", "aria-labelledby"], a0 = ["id"], 
       ]), 1032, ["href", "to", "is", "external", "active", "activeClass", "exactActive", "exactActiveClass", "disabled", "neverActive"])) : y(i.$slots, "default", { key: 1 })
     ], 2));
   }
-}, d0 = { class: "page-view" }, u0 = { class: "container" }, f0 = { class: "page-view-header" }, h0 = { class: "page-view-header-start" }, p0 = { class: "btn-inner-wrapper" }, C0 = {
+}, d0 = { class: "page-view" }, u0 = { class: "page-view-header" }, f0 = { class: "page-view-header-start" }, h0 = { class: "btn-inner-wrapper" }, p0 = {
   key: 0,
   class: "page-view-title h2"
-}, _0 = {
+}, C0 = {
   key: 0,
   class: "page-view-header-end"
-}, m0 = { class: "container" }, j6 = {
+}, F6 = {
   __name: "PageView",
   props: {
     totalItems: {
@@ -8467,49 +8467,60 @@ const r0 = /* @__PURE__ */ Xu(o0), l0 = ["id", "aria-labelledby"], a0 = ["id"], 
     },
     title: {
       type: String
+    },
+    fluid: {
+      type: Boolean,
+      default: !1
     }
   },
   setup(t) {
-    return (e, n) => (c(), h("div", d0, [
-      f("div", u0, [
-        f("div", f0, [
-          f("div", h0, [
+    const e = t, n = L(() => {
+      e.fluid;
+    });
+    return (i, s) => (c(), h("div", d0, [
+      f("div", {
+        class: N(n.value)
+      }, [
+        f("div", u0, [
+          f("div", f0, [
             t.previousUrl ? (c(), k(ge(t.previousComponent), {
               key: 0,
               href: t.previousUrl,
               class: "btn btn-transparent"
             }, {
               default: I(() => [
-                f("div", p0, [
+                f("div", h0, [
                   U(s3),
                   Y(" Back ")
                 ])
               ]),
               _: 1
             }, 8, ["href"])) : B("", !0),
-            y(e.$slots, "title-prepend"),
-            y(e.$slots, "title", {}, () => [
-              t.title ? (c(), h("h1", C0, j(t.title), 1)) : B("", !0)
+            y(i.$slots, "title-prepend"),
+            y(i.$slots, "title", {}, () => [
+              t.title ? (c(), h("h1", p0, j(t.title), 1)) : B("", !0)
             ]),
-            y(e.$slots, "title-append")
+            y(i.$slots, "title-append")
           ]),
-          e.$slots.actions ? (c(), h("div", _0, [
-            y(e.$slots, "actions")
+          i.$slots.actions ? (c(), h("div", C0, [
+            y(i.$slots, "actions")
           ])) : B("", !0)
         ])
-      ]),
-      f("div", m0, [
-        y(e.$slots, "default")
-      ])
+      ], 2),
+      f("div", {
+        class: N(n.value)
+      }, [
+        y(i.$slots, "default")
+      ], 2)
     ]));
   }
-}, g0 = { class: "page-sub-view" }, v0 = { class: "page-sub-view-header" }, b0 = { class: "page-sub-view-title" }, y0 = {
+}, _0 = { class: "page-sub-view" }, m0 = { class: "page-sub-view-header" }, g0 = { class: "page-sub-view-title" }, v0 = {
   key: 0,
   class: "h4 mb-0"
-}, E0 = {
+}, b0 = {
   key: 0,
   class: "page-sub-view-actions"
-}, z6 = {
+}, Z6 = {
   __name: "PageSubView",
   props: {
     totalItems: {
@@ -8525,16 +8536,16 @@ const r0 = /* @__PURE__ */ Xu(o0), l0 = ["id", "aria-labelledby"], a0 = ["id"], 
     }
   },
   setup(t) {
-    return (e, n) => (c(), h("div", g0, [
-      f("div", v0, [
-        f("div", b0, [
+    return (e, n) => (c(), h("div", _0, [
+      f("div", m0, [
+        f("div", g0, [
           y(e.$slots, "title-prepend"),
           y(e.$slots, "title", {}, () => [
-            t.title ? (c(), h("h2", y0, j(t.title), 1)) : B("", !0)
+            t.title ? (c(), h("h2", v0, j(t.title), 1)) : B("", !0)
           ]),
           y(e.$slots, "title-append")
         ]),
-        e.$slots.actions ? (c(), h("div", E0, [
+        e.$slots.actions ? (c(), h("div", b0, [
           y(e.$slots, "actions")
         ])) : B("", !0)
       ]),
@@ -8543,25 +8554,25 @@ const r0 = /* @__PURE__ */ Xu(o0), l0 = ["id", "aria-labelledby"], a0 = ["id"], 
   }
 };
 export {
-  $0 as Alert,
-  B6 as AppHeader,
+  E0 as Alert,
+  k6 as AppHeader,
   Le as Button,
-  L0 as ButtonGroup,
-  S0 as DataTable,
-  T0 as Dropdown,
-  V0 as DropdownDivider,
-  O0 as DropdownHeader,
-  N0 as DropdownItem,
-  x0 as DropdownItemForm,
-  M0 as DropdownItemText,
-  D0 as Form,
+  $0 as ButtonGroup,
+  A0 as DataTable,
+  L0 as Dropdown,
+  S0 as DropdownDivider,
+  T0 as DropdownHeader,
+  V0 as DropdownItem,
+  O0 as DropdownItemForm,
+  N0 as DropdownItemText,
+  x0 as Form,
   Vc as FormArray,
   $c as FormBadge,
   wc as FormBoolean,
   N1 as FormCheckbox,
-  I0 as FormCheckboxGroup,
+  M0 as FormCheckboxGroup,
   Ec as FormCollection,
-  k0 as FormGroup,
+  D0 as FormGroup,
   J4 as FormInput,
   G1 as FormInputAdapter,
   Q4 as FormInputGroup,
@@ -8569,82 +8580,82 @@ export {
   rs as FormInvalidFeedback,
   cc as FormObject,
   kc as FormRadio,
-  H0 as FormRadioGroup,
-  B0 as FormRange,
+  I0 as FormRadioGroup,
+  k0 as FormRange,
   sc as FormSelect,
   as as FormSelectOption,
   nc as FormSelectOptionGroup,
-  R0 as FormText,
-  P0 as FormTextarea,
+  H0 as FormText,
+  B0 as FormTextarea,
   ls as FormValidFeedback,
-  F0 as IconAbTesting,
-  Z0 as IconAngleDown,
+  R0 as IconAbTesting,
+  P0 as IconAngleDown,
   s3 as IconAngleLeft,
-  j0 as IconAngleRight,
-  z0 as IconAngleUp,
-  W0 as IconAnnotation,
-  K0 as IconArrowDown,
-  Y0 as IconArrowLeft,
-  q0 as IconArrowRight,
+  F0 as IconAngleRight,
+  Z0 as IconAngleUp,
+  j0 as IconAnnotation,
+  z0 as IconArrowDown,
+  W0 as IconArrowLeft,
+  K0 as IconArrowRight,
   z3 as IconArrowTopRight,
-  U0 as IconArrowUp,
-  G0 as IconCalendar,
-  Q0 as IconCheck,
+  Y0 as IconArrowUp,
+  q0 as IconCalendar,
+  U0 as IconCheck,
   O1 as IconClose,
-  X0 as IconCode,
-  J0 as IconCog,
-  e6 as IconCogPen,
-  t6 as IconCopy,
-  n6 as IconCursor,
-  i6 as IconCustomAlert,
-  s6 as IconCustomDimension,
-  o6 as IconCustomReport,
+  G0 as IconCode,
+  Q0 as IconCog,
+  X0 as IconCogPen,
+  J0 as IconCopy,
+  e6 as IconCursor,
+  t6 as IconCustomAlert,
+  n6 as IconCustomDimension,
+  i6 as IconCustomReport,
   eo as IconDanger,
-  r6 as IconDashboard,
-  l6 as IconDelete,
-  a6 as IconEdit,
-  c6 as IconExpand,
-  d6 as IconExport,
-  u6 as IconExternalLink,
-  f6 as IconFilter,
-  h6 as IconForm,
-  p6 as IconFunnel,
-  C6 as IconGoal,
-  _6 as IconHeatmap,
-  m6 as IconImport,
+  s6 as IconDashboard,
+  o6 as IconDelete,
+  r6 as IconEdit,
+  l6 as IconExpand,
+  a6 as IconExport,
+  c6 as IconExternalLink,
+  d6 as IconFilter,
+  u6 as IconForm,
+  f6 as IconFunnel,
+  h6 as IconGoal,
+  p6 as IconHeatmap,
+  C6 as IconImport,
   Bs as IconInfo,
-  g6 as IconLayoutGrid,
-  v6 as IconLayoutList,
-  b6 as IconLock,
-  y6 as IconLockOpen,
-  E6 as IconLogout,
-  w6 as IconMarker,
-  $6 as IconMatomo,
-  A6 as IconOnPremise,
+  _6 as IconLayoutGrid,
+  m6 as IconLayoutList,
+  g6 as IconLock,
+  v6 as IconLockOpen,
+  b6 as IconLogout,
+  y6 as IconMarker,
+  E6 as IconMatomo,
+  w6 as IconOnPremise,
   mo as IconOpenmost,
   cs as IconPlus,
-  L6 as IconPuzzle,
-  S6 as IconRefresh,
-  T6 as IconRequired,
-  V6 as IconScheduledReport,
-  O6 as IconSearch,
-  N6 as IconSegment,
-  x6 as IconSessionRecording,
-  M6 as IconSite,
+  $6 as IconPuzzle,
+  A6 as IconRefresh,
+  L6 as IconRequired,
+  S6 as IconScheduledReport,
+  T6 as IconSearch,
+  V6 as IconSegment,
+  O6 as IconSessionRecording,
+  N6 as IconSite,
   Os as IconSuccess,
-  D6 as IconTag,
-  I6 as IconTagPlus,
-  k6 as IconUser,
-  H6 as IconUsers,
+  x6 as IconTag,
+  M6 as IconTagPlus,
+  D6 as IconUser,
+  I6 as IconUsers,
   Ks as IconWarning,
-  R6 as LogoOpenmost,
-  P6 as Modal,
-  F6 as Nav,
-  Z6 as NavItem,
+  H6 as LogoOpenmost,
+  B6 as Modal,
+  R6 as Nav,
+  P6 as NavItem,
   c0 as NavLink,
-  z6 as PageSubView,
-  j6 as PageView,
-  A0 as SignInWithOpenmostButton,
+  Z6 as PageSubView,
+  F6 as PageView,
+  w0 as SignInWithOpenmostButton,
   Ro as Table,
   cn as Tbody,
   Vo as Td,

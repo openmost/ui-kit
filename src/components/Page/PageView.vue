@@ -1,7 +1,7 @@
 <template>
   <div class="page-view">
 
-    <div class="container">
+    <div :class="containerClass">
 
       <div class="page-view-header">
 
@@ -32,7 +32,7 @@
 
     </div>
 
-    <div class="container">
+    <div :class="containerClass">
 
       <slot/>
 
@@ -43,6 +43,7 @@
 
 <script setup>
 import IconAngleLeft from "../Icon/IconAngleLeft.vue";
+import {computed} from "vue";
 
 const props = defineProps({
   totalItems: {
@@ -62,8 +63,16 @@ const props = defineProps({
   },
   title: {
     type: String,
+  },
+  fluid: {
+    type: Boolean,
+    default: false,
   }
 });
+
+const containerClass = computed(() => {
+  props.fluid ? 'container-fluid' : 'container';
+})
 </script>
 
 <style lang="scss">
