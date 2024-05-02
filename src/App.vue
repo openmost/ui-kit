@@ -2,16 +2,19 @@
   <main class="py-5">
     <PageView title="Demo">
 
-      {{ state ? 'OUI' : 'NON' }}
-
-      <hr>
-
       <Modal
+          id="bulk-delete"
+          trigger-text="Delete"
           trigger-variant="outline-danger"
-          trigger-text="Hey"
-          :trigger-icon="IconDanger"
+          :trigger-icon="IconDelete"
+          title="Bulk delete"
+          ok-variant="danger"
+          ok-title="Delete"
           @ok="onOk"
-      >Test
+          centered
+      >
+        Are you sure you want to delete the selected items? You can export the data to save it before
+        deleting it permanently.
       </Modal>
 
     </PageView>
@@ -21,8 +24,8 @@
 <script setup lang="ts">
 import PageView from "./components/Page/PageView.vue";
 import Modal from "./components/Modal/Modal.vue";
-import IconDanger from "./components/Icon/IconDanger.vue";
 import {ref} from "vue";
+import IconDelete from "./components/Icon/IconDelete.vue";
 
 const state = ref(false);
 

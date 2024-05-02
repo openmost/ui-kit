@@ -1,6 +1,6 @@
 {
   "name": "@openmost/ui-kit",
-  "version": "0.1.27",
+  "version": "0.1.33",
   "type": "module",
   "publishConfig": {
     "access": "public"

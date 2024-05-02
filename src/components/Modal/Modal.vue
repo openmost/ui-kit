@@ -1,8 +1,13 @@
 <template>
 
   <slot name="trigger">
-    <Button :variant="triggerVariant" :class="triggerClass" :size="triggerSize" :disabled="triggerDisabled"
-            data-bs-toggle="modal" :data-bs-target="`#${id}`">
+    <Button
+        :variant="triggerVariant"
+        :class="triggerClass"
+        :size="triggerSize"
+        :disabled="triggerDisabled"
+        @click="show()"
+    >
       <template #icon v-if="triggerIcon">
         <component :is="triggerIcon"/>
       </template>
@@ -10,12 +15,13 @@
     </Button>
   </slot>
 
-  <div ref="modal"
-       :class="modalModalClass"
-       :id="id"
-       tabindex="-1"
-       :aria-labelledby="`${id}-label`"
-       aria-hidden="true">
+  <div
+      ref="modalEl"
+      :class="modalModalClass"
+      :id="id"
+      tabindex="-1"
+      :aria-labelledby="`${id}-label`"
+      aria-hidden="true">
 
     <div :class="modalDialogClass">
       <div :class="modalContentClass">
@@ -32,8 +38,8 @@
                 <button
                     type="button"
                     class="btn-close"
-                    data-bs-dismiss="modal"
                     aria-label="Close"
+                    @click="close()"
                 ></button>
               </slot>
             </template>
@@ -47,8 +53,9 @@
             <Button
                 type="button"
                 :class="modalCancelClass"
-                data-bs-dismiss="modal"
-                :disabled="cancelDisabled">
+                :disabled="cancelDisabled"
+                @click="close()"
+            >
               {{ cancelTitle }}
             </Button>
             <slot name="modal-ok">
@@ -69,9 +76,10 @@
 
 <script setup>
 import Modal from 'bootstrap/js/dist/modal';
-import {computed, onMounted, ref, nextTick} from "vue";
+import {computed, onMounted, ref} from "vue";
 import Button from "../Button/Button.vue";
 
+const modalEl = ref();
 const modal = ref();
 const emit = defineEmits(['ok', 'validate', 'success']);
 const props = defineProps({
@@ -128,6 +136,10 @@ const props = defineProps({
   },
   modalClass: {
     type: Array, Object, String,
+  },
+  noHideOnOk: {
+    type: Boolean,
+    default: false,
   },
   okTitle: {
     type: String,
@@ -233,7 +245,7 @@ const modalModalClass = computed(() => {
   return [
     'modal fade',
     props.modalClass,
-    props.show ? '' : 'show',
+    props.show ? 'show' : '',
   ]
 });
 
@@ -245,21 +257,20 @@ const modalTitleClass = computed(() => {
 })
 
 onMounted(() => {
-  modal.value = new Modal(modal.value)
+  modal.value = new Modal(modalEl.value);
 });
 
-async function hide() {
-  await nextTick();
-  modal.value.hide();
-}
-
-async function show() {
-  await nextTick();
+function show() {
   modal.value.show();
 }
 
-async function toggle() {
-  await nextTick();
+
+function hide() {
+  modal.value.hide();
+}
+
+
+function toggle() {
   modal.value.toggle();
 }
 
@@ -267,6 +278,9 @@ function onOk() {
   emit('ok');
   emit('validate');
   emit('success');
-  hide();
+
+  if(!props.noHideOnOk){
+    modal.value.hide()
+  }
 }
 </script>
