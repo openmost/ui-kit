@@ -76,6 +76,7 @@ import IconEdit from "./components/Icon/IconEdit.vue";
 import IconExpand from "./components/Icon/IconExpand.vue";
 import IconExport from "./components/Icon/IconExport.vue";
 import IconExternalLink from "./components/Icon/IconExternalLink.vue";
+import IconEye from "./components/Icon/IconEye.vue";
 import IconFilter from "./components/Icon/IconFilter.vue";
 import IconForm from "./components/Icon/IconForm.vue";
 import IconFunnel from "./components/Icon/IconFunnel.vue";
@@ -97,6 +98,7 @@ import IconPuzzle from "./components/Icon/IconPuzzle.vue";
 import IconRefresh from "./components/Icon/IconRefresh.vue";
 import IconRequired from "./components/Icon/IconRequired.vue";
 import IconScheduledReport from "./components/Icon/IconScheduledReport.vue";
+import IconShare from "./components/Icon/IconShare.vue";
 import IconSearch from "./components/Icon/IconSearch.vue";
 import IconSegment from "./components/Icon/IconSegment.vue";
 import IconSessionRecording from "./components/Icon/IconSessionRecording.vue";
@@ -206,6 +208,7 @@ export {
     IconExpand,
     IconExport,
     IconExternalLink,
+    IconEye,
     IconFilter,
     IconForm,
     IconFunnel,
@@ -230,6 +233,7 @@ export {
     IconSearch,
     IconSegment,
     IconSessionRecording,
+    IconShare,
     IconSite,
     IconSuccess,
     IconTag,

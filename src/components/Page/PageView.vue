@@ -71,7 +71,7 @@ const props = defineProps({
 });
 
 const containerClass = computed(() => {
-  props.fluid ? 'container-fluid' : 'container';
+  return props.fluid ? 'container-fluid' : 'container';
 })
 </script>
 

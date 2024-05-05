@@ -2,11 +2,15 @@
   <div id="app-header">
 
     <header class="app-header-logo">
+      <slot name="header-brand-prepend"/>
       <slot name="header-brand"/>
+      <slot name="header-brand-append"/>
     </header>
 
     <div class="app-header-actions-wrapper">
+      <slot name="header-actions-prepend"/>
       <slot name="header-actions"/>
+      <slot name="header-actions-append"/>
     </div>
 
   </div>
